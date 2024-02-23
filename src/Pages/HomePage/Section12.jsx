@@ -1,0 +1,258 @@
+import {
+  CreditScoreOutlined,
+  DeliveryDiningOutlined,
+  Facebook,
+  Instagram,
+  LinkedIn,
+  LocalShippingOutlined,
+  SupportAgentOutlined,
+  WhatsApp,
+  X,
+  YouTube,
+} from "@mui/icons-material";
+import FooterLogo from "../../assets/footer-logo.png";
+import PaymentLogoes from "../../assets/payment-poster.png";
+import PaymentLogo from "../../assets/payments.png";
+
+import {
+  Box,
+  Button,
+  Container,
+  Grid,
+  IconButton,
+  ListItem,
+  Stack,
+  Typography,
+} from "@mui/material";
+import { grey, orange } from "@mui/material/colors";
+import React from "react";
+import { Link, useNavigate } from "react-router-dom";
+const socialIcons = [
+  {
+    icon: Facebook,
+    bgc: "#365493",
+  },
+  {
+    icon: X,
+    bgc: "#010101",
+  },
+  {
+    icon: Instagram,
+    bgc: "#774430",
+  },
+  {
+    icon: YouTube,
+    bgc: "#cb2027",
+  },
+  {
+    icon: LinkedIn,
+    bgc: "#0274b3",
+  },
+  {
+    icon: WhatsApp,
+    bgc: "#1ebea5",
+  },
+];
+const Info = [
+  {
+    icon: LocalShippingOutlined,
+    text1: "Free Shipping.",
+    text2: "No one rejects, dislikes.",
+  },
+  {
+    icon: SupportAgentOutlined,
+    text1: "24/7 Support.",
+    text2: "It has survived not only.",
+  },
+  {
+    icon: CreditScoreOutlined,
+    text1: "Online Payment.",
+    text2: " All the Lorem Ipsum on.",
+  },
+  {
+    icon: DeliveryDiningOutlined,
+    text1: "Fast Delivery.",
+    text2: " Many desktop page now.",
+  },
+];
+const Lists = [
+  {
+    name: "OUR PRODUCTS",
+    items: ["Smart Card", "Smart Tag", "Keychain", "Table Show"],
+  },
+  {
+    name: "USEFUL LINKS",
+    items: ["Home", "Personal", "Business", "Contact Us", "About Us"],
+  },
+  {
+    name: "IMPORTANT LINKS",
+    items: [
+      "Account Login",
+      "Card register",
+      "Business Support",
+      "Cusomers Feed Back",
+      "Loyalty Points",
+      "tutorial",
+    ],
+  },
+  {
+    name: "OTHER LINKS",
+    items: [
+      "Our Store",
+      "Top Customers",
+      "Service evaluation",
+      "Privacy Policy",
+      "Returns",
+    ],
+  },
+];
+const Section12 = () => {
+  const nav = useNavigate();
+  return (
+    <footer style={{ backgroundColor: "rgb(221,113,116)" }}>
+      <Stack sx={{ backgroundColor: "#092143" }}>
+        <Container sx={{}}>
+          <Grid container>
+            {Info.map((item, index) => (
+              <Grid item xs={6} md={3} key={index}>
+                <Box
+                  component={"div"}
+                  sx={{
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    padding: "10px",
+                    gap: 1,
+                  }}
+                >
+                  <IconButton>
+                    <item.icon
+                      fontSize="large"
+                      sx={{ color: orange[600], fontSize: "60px" }}
+                    />
+                  </IconButton>
+                  <Typography variant="h7" color={"white"}>
+                    {item.text1}
+                    <br />
+                    {item.text2}
+                  </Typography>
+                </Box>
+              </Grid>
+            ))}
+            <hr style={{ width: "100%", color: grey[500] }} />
+            {Lists.map((item, index) => (
+              <Grid item xs={6} md={2} key={item.name} sx={{ padding: "20px" }}>
+                <Link className="FooterLinks">{item.name}</Link>
+                {item.items.map((i, ind) => (
+                  <ListItem key={i} sx={{ padding: "10px 0px" }}>
+                    <Link className="FooterLinks">{i}</Link>
+                  </ListItem>
+                ))}
+              </Grid>
+            ))}
+            <Grid item xs={6} md={4}>
+              <Box
+                sx={{
+                  display: "flex",
+                  justifyContent: "center",
+                  flexDirection: "column",
+                  alignItems: "center",
+                  padding: "10px",
+                  gap: 1,
+                  textAlign: "center",
+                  width: "100%",
+                  height: "100%",
+                }}
+              >
+                <img
+                  src={FooterLogo}
+                  alt="Footer-Logo"
+                  style={{ width: "100%" }}
+                />
+                <Typography variant="h7" color={"white"}>
+                  We work to help companies and individuals achieve digital
+                  transformation
+                </Typography>
+                <Typography variant="caption" color={"grey"}>
+                  Will be used in accordance with our Privacy Policy
+                </Typography>
+              </Box>
+            </Grid>
+          </Grid>
+
+          <hr style={{ width: "100%", color: grey[500] }} />
+          <Grid
+            item
+            xs={12}
+            sx={{
+              display: "flex",
+              flexDirection: { md: "row", xs: "column" },
+              my: 3,
+            }}
+          >
+            <Box
+              sx={{
+                width: { xs: "100%", md: "50%" },
+                textAlign: "center",
+              }}
+            >
+              <Typography
+                variant="h7"
+                color={"white"}
+                sx={{ display: "block", padding: "10px" }}
+              >
+                Payment System:
+              </Typography>
+              <Box
+                component={"img"}
+                src={PaymentLogoes}
+                sx={{ Padding: "10px" }}
+              />
+            </Box>
+            <Box sx={{ width: { xs: "100%", md: "50%" }, textAlign: "center" }}>
+              <Typography
+                variant="h7"
+                color={"white"}
+                sx={{ display: "block", padding: "10px" }}
+              >
+                Our Social Links:
+              </Typography>
+              <Box
+                sx={{
+                  width: "100%",
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  gap: 1,
+                }}
+              >
+                {socialIcons.map((item, index) => (
+                  <IconButton key={index} sx={{ bgcolor: `${item.bgc}` }}>
+                    <item.icon fontSize="small" sx={{ color: "white" }} />
+                  </IconButton>
+                ))}
+              </Box>
+            </Box>
+          </Grid>
+        </Container>
+      </Stack>
+      <Container
+        sx={{
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+          padding: "10px",
+          flexDirection: { xs: "column", md: "row" },
+        }}
+      >
+        <Typography variant="body2" sx={{ Padding: "10px", color: "#DDD" }}>
+          Own By Linky 2020 all rights are save.
+        </Typography>
+
+        <Box component={"img"} src={PaymentLogo} sx={{ Padding: "10px" }} />
+      </Container>
+    </footer>
+  );
+};
+
+export default Section12;
