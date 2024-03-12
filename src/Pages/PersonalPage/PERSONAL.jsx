@@ -46,14 +46,14 @@ const PERSONAL = () => {
       <Section2 />
       <Section3 />
       <Section4 />
-      <Section5 text={"Smart Business Card"} />
+      <Section5 text={"Smart Business Card"} /> {/* Divider Com*/} 
       <Section6 />
       <Section7 />
       <Section8 />
       <Section9 />
       <Section10 />
       <Section11 />
-      <Section5 text={"How can I start ?"} />
+      <Section5 text={"How can I start ?"} />  {/* Divider Com*/}
       {SectionDesignData.map((item, index) => {
         return (
           <SectionDesign

@@ -1,11 +1,13 @@
 import { useTheme } from "@emotion/react";
 import { Box, Container, Grid, Stack, Typography } from "@mui/material";
 import React, { useEffect } from "react";
-import { theme } from "../../Home";
 import PremiumAccDiagram from "./PremiumAccDiagram.jsx";
+import { ShowTextt } from "../ElementDesign/ObserverComp";
 
 const Section11 = () => {
+  const theme = useTheme();
   useEffect(() => {
+    ShowTextt("Section11Text", `rtl`);
     const observer = new IntersectionObserver((entries) => {
       const CheckedMark = document.querySelectorAll(".Checkmarkk");
       entries.forEach((entry) => {
@@ -40,7 +42,7 @@ const Section11 = () => {
   }, []);
 
   return (
-    <Stack sx={{ my: { md: 5, xs: 3 } }}>
+    <Stack sx={{ my: { md: 20, xs: 15 } }}>
       <Container>
         <Grid container>
           <Grid item xs={12} md={6}>
@@ -56,11 +58,18 @@ const Section11 = () => {
                 height: "100%",
               }}
             >
-              <Typography variant="h7">personal Accounts</Typography>
-              <Typography variant="h4" sx={{ fontWeight: "bold" }}>
+              <Typography variant="h7" className="HIdeText Section11Text">
+                personal Accounts
+              </Typography>
+              <Typography
+                className="HIdeText Section11Text"
+                variant="h4"
+                sx={{ fontWeight: "bold" }}
+              >
                 Premuim Account
               </Typography>
               <Typography
+                className="HIdeText Section11Text"
                 variant="caption"
                 sx={{ color: "grey", maxWidth: "480px" }}
               >

@@ -1,14 +1,8 @@
 import {
   CreditScoreOutlined,
   DeliveryDiningOutlined,
-  Facebook,
-  Instagram,
-  LinkedIn,
   LocalShippingOutlined,
   SupportAgentOutlined,
-  WhatsApp,
-  X,
-  YouTube,
 } from "@mui/icons-material";
 import FooterLogo from "../../assets/footer-logo.png";
 import PaymentLogoes from "../../assets/payment-poster.png";
@@ -23,36 +17,14 @@ import {
   ListItem,
   Stack,
   Typography,
+  useTheme,
 } from "@mui/material";
 import { grey, orange } from "@mui/material/colors";
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
-const socialIcons = [
-  {
-    icon: Facebook,
-    bgc: "#365493",
-  },
-  {
-    icon: X,
-    bgc: "#010101",
-  },
-  {
-    icon: Instagram,
-    bgc: "#774430",
-  },
-  {
-    icon: YouTube,
-    bgc: "#cb2027",
-  },
-  {
-    icon: LinkedIn,
-    bgc: "#0274b3",
-  },
-  {
-    icon: WhatsApp,
-    bgc: "#1ebea5",
-  },
-];
+import {socialIcons} from "../Products/ProductsInformation"
+// console.log(socialIcons)
+
 const Info = [
   {
     icon: LocalShippingOutlined,
@@ -107,9 +79,10 @@ const Lists = [
   },
 ];
 const Section12 = () => {
+  const theme =  useTheme()
   const nav = useNavigate();
   return (
-    <footer style={{ backgroundColor: "rgb(221,113,116)" }}>
+    <Stack component={'footer'} sx={{ backgroundColor: "rgb(221,113,116)" }}>
       <Stack sx={{ backgroundColor: "#092143" }}>
         <Container sx={{}}>
           <Grid container>
@@ -150,7 +123,7 @@ const Section12 = () => {
                 ))}
               </Grid>
             ))}
-            <Grid item xs={6} md={4}>
+            <Grid item xs={12} md={4}>
               <Box
                 sx={{
                   display: "flex",
@@ -167,7 +140,7 @@ const Section12 = () => {
                 <img
                   src={FooterLogo}
                   alt="Footer-Logo"
-                  style={{ width: "100%" }}
+                  style={{ width: "100%", maxWidth:'400px' }}
                 />
                 <Typography variant="h7" color={"white"}>
                   We work to help companies and individuals achieve digital
@@ -245,13 +218,13 @@ const Section12 = () => {
           flexDirection: { xs: "column", md: "row" },
         }}
       >
-        <Typography variant="body2" sx={{ Padding: "10px", color: "#DDD" }}>
+        <Typography variant="body2" sx={{ Padding: "10px", color: '#FFF' }}>
           Own By Linky 2020 all rights are save.
         </Typography>
 
         <Box component={"img"} src={PaymentLogo} sx={{ Padding: "10px" }} />
       </Container>
-    </footer>
+    </Stack>
   );
 };
 

@@ -7,9 +7,9 @@ import {
   ListItemIcon,
   ListItemText,
   Typography,
+  useTheme,
 } from "@mui/material";
-import React from "react";
-import { theme } from "../../Home.jsx";
+import React, { useEffect } from "react";
 import {
   CreditScore,
   CurrencyExchange,
@@ -18,6 +18,8 @@ import {
 } from "@mui/icons-material";
 import bg1 from "../../assets/Cards/PesonalPage/bg2.png";
 import bg2 from "../../assets/Cards/PesonalPage/bg3.png";
+import { Xrotate, ShowTextt } from "../ElementDesign/ObserverComp";
+
 const ListContennt = [
   {
     Icon: Diversity2,
@@ -45,8 +47,17 @@ const ListContennt = [
   },
 ];
 const Section2 = () => {
+  useEffect(() => {
+    Xrotate('bg1','FliptopShow','FliptopHidden')
+    Xrotate('LinkySolution','FliptopShow','FliptopHidden')
+    Xrotate('Allin','FliptopShow','FliptopHidden')
+    Xrotate('bg2','FliprightShow','FliprightHidden')
+    ShowTextt('LIsttext', `ltr`);
+  }, [])
+  
+  const theme =  useTheme()
   return (
-    <Container sx={{ mt: 3 }}>
+    <Container sx={{ my: 20 }}>
       <Box
         sx={{
           textAlign: "center",
@@ -57,10 +68,10 @@ const Section2 = () => {
           mb: 3,
         }}
       >
-        <Typography variant="h6" sx={{ color: "grey", fontWeight: "bold" }}>
+        <Typography variant="h6" id='LinkySolution' sx={{ color: "grey", fontWeight: "bold" }} className="FliptopHidden">
           Linky Solution
         </Typography>
-        <Typography variant="h4" sx={{ maxWidth: "566px" }}>
+        <Typography variant="h4" sx={{ maxWidth: "566px" }} id='Allin' className="FliptopHidden">
           All-in-one{" "}
           <u
             style={{
@@ -84,9 +95,10 @@ const Section2 = () => {
               height: "100%",
             }}
           >
-            <List>
+            <List   className="HIdeText LIsttext">
               {ListContennt.map((item, i) => (
                 <ListItem
+              
                   key={i}
                   sx={{
                     "&:hover .child0": {
@@ -151,6 +163,8 @@ const Section2 = () => {
           >
             <img
               src={bg1}
+              id="bg1"
+          className="FliptopHidden"
               alt=""
               style={{ width: "100%", maxWidth: "330px" }}
             />
@@ -168,6 +182,7 @@ const Section2 = () => {
           >
             <img
               src={bg2}
+              id="bg2" className="FliprightHidden"
               alt=""
               style={{ width: "100%", maxWidth: "330px" }}
             />

@@ -6,9 +6,9 @@ import {
   CardContent,
   Grid,
   Typography,
+  useTheme,
 } from "@mui/material";
 import React from "react";
-import { theme } from "../../Home.jsx";
 import {
   PermMediaOutlined,
   SaveOutlined,
@@ -17,6 +17,7 @@ import {
   Speed,
   ThumbUpAltOutlined,
 } from "@mui/icons-material";
+import PrimaryButton from "../ElementDesign/PrimaryButton";
 export const NewGEN = [
   {
     icon: PermMediaOutlined,
@@ -62,6 +63,7 @@ export const NewGEN = [
   },
 ];
 const Section2 = () => {
+  const theme = useTheme();
   return (
     <Box
       component={"section"}
@@ -71,7 +73,7 @@ const Section2 = () => {
         gap: "2rem",
         flexDirection: { xs: "column", md: "row" },
         height: "100%",
-        mt: 5,
+        my: { xs: 10, md: 15 }
       }}
     >
       <Box
@@ -86,10 +88,11 @@ const Section2 = () => {
         }}
       >
         <Typography
-          variant="h2"
+          component={'h2'}
+          variant="h4"
           fontWeight={"bold"}
           textAlign={"center"}
-          sx={{ fontSize: { xs: "1.2rem", md: "3.5rem" } }}
+
         >
           New Generation of <br />
           <Typography
@@ -109,18 +112,21 @@ const Section2 = () => {
           Learn about the capabilities of the new generation of smart cards from
           Linky, and join the future
         </Typography>
-        <Button
-          variant="contained"
+        <PrimaryButton
+          content='CONTACT US'
           sx={{
-            fontWeight: "bold",
-            bgcolor: `${theme.palette.primary.main}!important`,
-            borderRadius: "8px",
-            paddingX: "15px",
-            "&:hover": { boxShadow: `-1px -1px  10px 5px #29E6FF !important` },
+            bgcolor: `${theme.palette.primary.dark}!important`,
+            paddingX: "2rem",
+            "&:hover": {
+              boxShadow:
+                theme.palette.mode == "light"
+                  ? `1px 1px  5px 5px rgba(0,0,0,.3) !important`
+                  : `0px 0px  5px 5px rgba(255,255,255,.3) !important`,
+              bgcolor: theme.palette.primary.main,
+            },
           }}
         >
-          CONTACT US
-        </Button>
+        </PrimaryButton>
       </Box>
 
       <Box
@@ -144,6 +150,8 @@ const Section2 = () => {
                   sx={{
                     width: "100%",
                     height: "100%",
+                    borderRadius: "30px",
+
                   }}
                 >
                   <CardContent
@@ -153,7 +161,6 @@ const Section2 = () => {
                       justifyContent: "space-evenly",
                       alignItems: "center",
                       padding: "1rem",
-                      borderRadius: "8px",
                       gap: 1,
                     }}
                   >
@@ -175,12 +182,12 @@ const Section2 = () => {
                     <Typography
                       textAlign={"center"}
                       variant="body1"
-                      // color={theme.palette.Accent.main}
+                      color={theme.palette.primary.main}
                       fontWeight={"bold"}
                     >
                       {item.title}
                     </Typography>
-                    <Typography variant="caption" textAlign={"center"}>
+                    <Typography variant="caption" textAlign={"center"} sx={{color:theme.palette.text.secondary}}>
                       {item.subtitle}
                     </Typography>
                   </CardContent>

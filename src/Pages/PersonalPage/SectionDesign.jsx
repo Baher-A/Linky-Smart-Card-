@@ -1,5 +1,7 @@
 import { Box, Container, Grid, Typography } from "@mui/material";
-import React from "react";
+import { Xrotate, ShowTextt } from "../ElementDesign/ObserverComp";
+
+import React, { useEffect } from "react";
 const SectionDesign = ({
   Pic,
   Step,
@@ -7,12 +9,19 @@ const SectionDesign = ({
   SectionCaption,
   imageView,
 }) => {
+  useEffect(() => {
+    ShowTextt("Section12Text", `rtl`);
+    Xrotate(`ImageGallery${Step}`, `FliprightShow`, `FliprightHidden`)
+  
+  }, [])
+  
   return (
     <Container sx={{ my: 5 }}>
       <Grid container direction={imageView == "left" ? "row" : "row-reverse"}>
         <Grid item xs={12} sm={6}>
           <img
             src={Pic}
+            id={`ImageGallery${Step}`}
             alt="Purchase-Card"
             style={{ width: "100%", height: "100%", maxWidth: "420px" }}
           />
@@ -29,11 +38,11 @@ const SectionDesign = ({
               padding: "20px",
             }}
           >
-            <Typography variant="subtitle1" sx={{ color: "grey" }}>
+            <Typography variant="subtitle1" sx={{ color: "grey" }} className="HIdeText Section12Text" >
               {Step}
             </Typography>
-            <Typography variant="h4">{SectionTitle}</Typography>
-            <Typography variant="subtitle2"> {SectionCaption}</Typography>
+            <Typography variant="h4" className="HIdeText Section12Text">{SectionTitle}</Typography>
+            <Typography variant="subtitle2" className="HIdeText Section12Text"> {SectionCaption}</Typography>
           </Box>
         </Grid>
       </Grid>

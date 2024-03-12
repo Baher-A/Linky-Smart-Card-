@@ -1,9 +1,10 @@
+import { useTheme } from "@mui/material";
 import React, { useState } from "react";
 
-const QRCodeDesign = ({ ModeColor }) => {
-  const [FillOPtion, setFillOPtion] = useState(
-    ModeColor == "dark" ? "white" : "black"
-  );
+const QRCodeDesign = () => {
+
+  const QRtheme = useTheme();
+
   return (
     <svg
       width="592"
@@ -20,7 +21,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector"
                   d="M176 37.5V32H165.5C163.979 32 162.682 32.5365 161.609 33.6094C160.537 34.6824 160 35.9792 160 37.5V48H176V37.5Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -30,7 +31,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_2"
                 d="M192 32H176V48H192V32Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -40,7 +41,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_3"
                   d="M208 32H192V48H208C207.896 47.896 207.766 47.7446 207.609 47.5469C207.453 47.3491 207.177 46.9478 206.781 46.3437C206.385 45.7395 206.031 45.1352 205.719 44.5312C205.406 43.9272 205.125 43.2083 204.875 42.3749C204.625 41.5414 204.5 40.7501 204.5 40C204.5 39.2499 204.62 38.4635 204.859 37.6406C205.099 36.8178 205.391 36.0834 205.734 35.4374C206.078 34.7915 206.422 34.203 206.766 33.6718C207.109 33.1406 207.396 32.7291 207.625 32.4374L208 32Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -51,7 +52,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_4"
                   d="M255.2 42.2499C255.2 43.6189 254.717 44.7861 253.752 45.7515C252.786 46.7169 251.619 47.2 250.25 47.2H245.75C244.381 47.2 243.214 46.7169 242.249 45.7515C241.283 44.7861 240.8 43.6189 240.8 42.2499V37.7501C240.8 36.3814 241.283 35.2141 242.248 34.2486C243.214 33.2832 244.381 32.8 245.75 32.8H250.25C251.619 32.8 252.786 33.2829 253.752 34.2485C254.717 35.2141 255.2 36.3813 255.2 37.7501V42.2499Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -62,7 +63,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_5"
                   d="M272 48H288V32H272C272.104 32.1042 272.234 32.2552 272.391 32.4531C272.547 32.651 272.823 33.0522 273.219 33.6563C273.615 34.2605 273.969 34.8646 274.281 35.4688C274.594 36.073 274.875 36.7917 275.125 37.6251C275.375 38.4586 275.5 39.2499 275.5 40C275.5 40.7501 275.38 41.5366 275.141 42.3594C274.901 43.1821 274.609 43.9165 274.266 44.5626C273.922 45.2086 273.578 45.7968 273.234 46.3282C272.891 46.8595 272.604 47.271 272.375 47.5626L272 48Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -72,7 +73,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_6"
                 d="M304 32H288V48H304V32Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -82,7 +83,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_7"
                   d="M320 37.5C320 35.9792 319.463 34.6822 318.391 33.6094C317.318 32.5366 316.021 32 314.5 32H304V48H320V37.5Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -93,7 +94,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_8"
                   d="M400 48H416V32H400C400.104 32.1042 400.234 32.2552 400.391 32.4531C400.547 32.651 400.823 33.0522 401.219 33.6563C401.615 34.2605 401.969 34.8646 402.281 35.4688C402.594 36.073 402.875 36.7917 403.125 37.6251C403.375 38.4586 403.5 39.2499 403.5 40C403.5 40.7501 403.38 41.5366 403.141 42.3594C402.901 43.1821 402.609 43.9165 402.266 44.5626C401.922 45.2086 401.578 45.7968 401.234 46.3282C400.891 46.8595 400.604 47.271 400.375 47.5626L400 48Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -104,7 +105,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_9"
                   d="M432 37.5C432 35.9792 431.463 34.6822 430.391 33.6094C429.318 32.5366 428.021 32 426.5 32H416V48H432V37.5Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -114,7 +115,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_10"
                 d="M176 48H160V64H176V48Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -124,7 +125,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_11"
                   d="M192 48H176V64H186.5C188.021 64 189.318 63.4634 190.391 62.3906C191.463 61.3178 192 60.021 192 58.5V48Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -135,7 +136,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_12"
                   d="M224 48V64H240V48C239.896 48.1042 239.745 48.2344 239.547 48.3906C239.349 48.5467 238.948 48.8229 238.344 49.2187C237.74 49.6146 237.135 49.9688 236.531 50.2813C235.927 50.5938 235.208 50.875 234.375 51.125C233.541 51.3749 232.75 51.5 232 51.5C231.25 51.5 230.464 51.3802 229.641 51.1406C228.818 50.9011 228.083 50.6094 227.437 50.2656C226.792 49.9218 226.203 49.5781 225.672 49.2344C225.14 48.8907 224.729 48.6042 224.437 48.375L224 48Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -145,7 +146,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_13"
                 d="M304 48H288V64H304V48Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -154,7 +155,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_14"
                 d="M320 48H304V64H320V48Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -164,7 +165,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_15"
                   d="M368 48V64H384V48C383.896 48.1042 383.745 48.2344 383.547 48.3906C383.349 48.5467 382.948 48.8229 382.344 49.2187C381.74 49.6146 381.135 49.9688 380.531 50.2813C379.927 50.5938 379.208 50.875 378.375 51.125C377.541 51.3749 376.75 51.5 376 51.5C375.25 51.5 374.464 51.3802 373.641 51.1406C372.818 50.9011 372.083 50.6094 371.437 50.2656C370.792 49.9218 370.203 49.5781 369.672 49.2344C369.14 48.8907 368.729 48.6042 368.437 48.375L368 48Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -174,7 +175,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_16"
                 d="M432 48H416V64H432V48Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -184,7 +185,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_17"
                   d="M176 80V64H160V80C160.104 79.896 160.255 79.7656 160.453 79.6094C160.651 79.4533 161.052 79.1773 161.656 78.7813C162.26 78.3853 162.865 78.0312 163.469 77.7187C164.073 77.4062 164.792 77.125 165.625 76.875C166.459 76.6251 167.25 76.5 168 76.5C168.75 76.5 169.537 76.6197 170.359 76.8594C171.182 77.099 171.916 77.3906 172.563 77.7344C173.209 78.0782 173.797 78.4219 174.328 78.7656C174.859 79.1093 175.271 79.3958 175.563 79.625C175.854 79.8541 176 79.979 176 80Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -195,7 +196,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_18"
                   d="M207.2 74.2499C207.2 75.6189 206.717 76.7861 205.752 77.7515C204.786 78.7169 203.619 79.2 202.25 79.2H197.75C196.381 79.2 195.214 78.7169 194.249 77.7515C193.283 76.7861 192.8 75.6189 192.8 74.2499V69.7501C192.8 68.3814 193.283 67.2141 194.248 66.2486C195.214 65.2832 196.381 64.8 197.75 64.8H202.25C203.619 64.8 204.786 65.2829 205.752 66.2485C206.717 67.2141 207.2 68.3813 207.2 69.7501V74.2499Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -205,7 +206,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_19"
                 d="M240 64H224V80H240V64Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -215,7 +216,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_20"
                   d="M256 69.5C256 67.9792 255.463 66.6822 254.391 65.6094C253.318 64.5366 252.021 64 250.5 64H240V80H256V69.5Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -226,7 +227,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_21"
                   d="M288 69.5V64H277.5C275.979 64 274.682 64.5365 273.609 65.6094C272.537 66.6824 272 67.9792 272 69.5V80H288V69.5Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -236,7 +237,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_22"
                 d="M304 64H288V80H304V64Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -245,7 +246,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_23"
                 d="M320 64H304V80H320V64Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -255,7 +256,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_24"
                   d="M336 69.5C336 67.9792 335.463 66.6822 334.391 65.6094C333.318 64.5366 332.021 64 330.5 64H320V80H336V69.5Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -266,7 +267,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_25"
                   d="M384 64H368V74.5C368 76.021 368.536 77.3178 369.609 78.3906C370.682 79.4634 371.979 80 373.5 80H384V64Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -276,7 +277,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_26"
                 d="M400 64H384V80H400V64Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -285,7 +286,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_27"
                 d="M416 64H400V80H416V64Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -294,7 +295,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_28"
                 d="M432 64H416V80H432V64Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -304,7 +305,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_29"
                   d="M240 80H224V90.5C224 92.021 224.536 93.3178 225.609 94.3906C226.682 95.4634 227.979 96 229.5 96H240V80Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -315,7 +316,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_30"
                   d="M256 80H240V96H250.5C252.021 96 253.318 95.4634 254.391 94.3906C255.463 93.3178 256 92.021 256 90.5V80Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -326,7 +327,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_31"
                   d="M288 96V80H272V96C272.104 95.896 272.255 95.7656 272.453 95.6094C272.651 95.4533 273.052 95.1773 273.656 94.7813C274.26 94.3853 274.865 94.0312 275.469 93.7187C276.073 93.4062 276.792 93.125 277.625 92.875C278.459 92.6251 279.25 92.5 280 92.5C280.75 92.5 281.537 92.6197 282.359 92.8594C283.182 93.099 283.916 93.3906 284.563 93.7344C285.209 94.0782 285.797 94.4219 286.328 94.7656C286.859 95.1093 287.271 95.3958 287.563 95.625C287.854 95.8541 288 95.979 288 96Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -336,7 +337,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_32"
                 d="M336 80H320V96H336V80Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -346,7 +347,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_33"
                   d="M352 80H336V96H352C351.896 95.896 351.766 95.7446 351.609 95.5469C351.453 95.3491 351.177 94.9478 350.781 94.3437C350.385 93.7395 350.031 93.1352 349.719 92.5312C349.406 91.9272 349.125 91.2083 348.875 90.3749C348.625 89.5414 348.5 88.7501 348.5 88C348.5 87.2499 348.62 86.4635 348.859 85.6406C349.099 84.8178 349.391 84.0834 349.734 83.4374C350.078 82.7915 350.422 82.203 350.766 81.6718C351.109 81.1406 351.396 80.7291 351.625 80.4374L352 80Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -357,7 +358,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_34"
                   d="M416 80H400V90.5C400 92.021 400.536 93.3178 401.609 94.3906C402.682 95.4634 403.979 96 405.5 96H416V80Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -368,7 +369,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_35"
                   d="M432 80H416V96H426.5C428.021 96 429.318 95.4634 430.391 94.3906C431.463 93.3178 432 92.021 432 90.5V80Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -379,7 +380,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_36"
                   d="M176 96V112H192V96C191.896 96.1042 191.745 96.2344 191.547 96.3906C191.349 96.5467 190.948 96.8229 190.344 97.2187C189.74 97.6146 189.135 97.9688 188.531 98.2813C187.927 98.5938 187.208 98.875 186.375 99.125C185.541 99.3749 184.75 99.5 184 99.5C183.25 99.5 182.464 99.3802 181.641 99.1406C180.818 98.9011 180.083 98.6094 179.437 98.2656C178.792 97.9218 178.203 97.5781 177.672 97.2344C177.14 96.8907 176.729 96.6042 176.437 96.375L176 96Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -390,7 +391,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_37"
                   d="M256 96V112H272V96C271.896 96.1042 271.745 96.2344 271.547 96.3906C271.349 96.5467 270.948 96.8229 270.344 97.2187C269.74 97.6146 269.135 97.9688 268.531 98.2813C267.927 98.5938 267.208 98.875 266.375 99.125C265.541 99.3749 264.75 99.5 264 99.5C263.25 99.5 262.464 99.3802 261.641 99.1406C260.818 98.9011 260.083 98.6094 259.437 98.2656C258.792 97.9218 258.203 97.5781 257.672 97.2344C257.14 96.8907 256.729 96.6042 256.437 96.375L256 96Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -401,7 +402,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_38"
                   d="M288 112H304V96H288C288.104 96.1042 288.234 96.2552 288.391 96.4531C288.547 96.651 288.823 97.0522 289.219 97.6563C289.615 98.2605 289.969 98.8646 290.281 99.4688C290.594 100.073 290.875 100.792 291.125 101.625C291.375 102.459 291.5 103.25 291.5 104C291.5 104.75 291.38 105.537 291.141 106.359C290.901 107.182 290.609 107.916 290.266 108.563C289.922 109.209 289.578 109.797 289.234 110.328C288.891 110.86 288.604 111.271 288.375 111.563L288 112Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -411,7 +412,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_39"
                 d="M320 96H304V112H320V96Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -420,7 +421,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_40"
                 d="M336 96H320V112H336V96Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -430,7 +431,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_41"
                   d="M176 117.5V112H165.5C163.979 112 162.682 112.536 161.609 113.609C160.537 114.682 160 115.979 160 117.5V128H176V117.5Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -441,7 +442,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_42"
                   d="M192 112H176V128H186.5C188.021 128 189.318 127.463 190.391 126.391C191.463 125.318 192 124.021 192 122.5V112Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -452,7 +453,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_43"
                   d="M223.2 122.25C223.2 123.619 222.717 124.786 221.752 125.752C220.786 126.717 219.619 127.2 218.25 127.2H213.75C212.381 127.2 211.214 126.717 210.249 125.752C209.283 124.786 208.8 123.619 208.8 122.25V117.75C208.8 116.381 209.283 115.214 210.248 114.249C211.214 113.283 212.381 112.8 213.75 112.8H218.25C219.619 112.8 220.786 113.283 221.752 114.248C222.717 115.214 223.2 116.381 223.2 117.75V122.25Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -462,7 +463,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_44"
                 d="M272 112H256V128H272V112Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -472,7 +473,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_45"
                   d="M288 112H272V128H288C287.896 127.896 287.766 127.745 287.609 127.547C287.453 127.349 287.177 126.948 286.781 126.344C286.385 125.74 286.031 125.135 285.719 124.531C285.406 123.927 285.125 123.208 284.875 122.375C284.625 121.541 284.5 120.75 284.5 120C284.5 119.25 284.62 118.464 284.859 117.641C285.099 116.818 285.391 116.083 285.734 115.437C286.078 114.792 286.422 114.203 286.766 113.672C287.109 113.141 287.396 112.729 287.625 112.437L288 112Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -483,7 +484,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_46"
                   d="M320 112H304V122.5C304 124.021 304.536 125.318 305.609 126.391C306.682 127.463 307.979 128 309.5 128H320V112Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -493,7 +494,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_47"
                 d="M336 112H320V128H336V112Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -503,7 +504,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_48"
                   d="M400 117.5V112H389.5C387.979 112 386.682 112.536 385.609 113.609C384.537 114.682 384 115.979 384 117.5V128H400V117.5Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -513,7 +514,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_49"
                 d="M416 112H400V128H416V112Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -523,7 +524,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_50"
                   d="M432 117.5C432 115.979 431.463 114.682 430.391 113.609C429.318 112.537 428.021 112 426.5 112H416V128H432V117.5Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -533,7 +534,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_51"
                 d="M176 128H160V144H176V128Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -543,7 +544,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_52"
                   d="M207.2 138.25C207.2 139.619 206.717 140.786 205.752 141.752C204.786 142.717 203.619 143.2 202.25 143.2H197.75C196.381 143.2 195.214 142.717 194.249 141.752C193.283 140.786 192.8 139.619 192.8 138.25V133.75C192.8 132.381 193.283 131.214 194.248 130.249C195.214 129.283 196.381 128.8 197.75 128.8H202.25C203.619 128.8 204.786 129.283 205.752 130.248C206.717 131.214 207.2 132.381 207.2 133.75V138.25Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -554,7 +555,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_53"
                   d="M239.2 138.25C239.2 139.619 238.717 140.786 237.752 141.752C236.786 142.717 235.619 143.2 234.25 143.2H229.75C228.381 143.2 227.214 142.717 226.249 141.752C225.283 140.786 224.8 139.619 224.8 138.25V133.75C224.8 132.381 225.283 131.214 226.248 130.249C227.214 129.283 228.381 128.8 229.75 128.8H234.25C235.619 128.8 236.786 129.283 237.752 130.248C238.717 131.214 239.2 132.381 239.2 133.75V138.25Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -564,7 +565,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_54"
                 d="M272 128H256V144H272V128Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -574,7 +575,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_55"
                   d="M303.2 138.25C303.2 139.619 302.717 140.786 301.752 141.752C300.786 142.717 299.619 143.2 298.25 143.2H293.75C292.381 143.2 291.214 142.717 290.249 141.752C289.283 140.786 288.8 139.619 288.8 138.25V133.75C288.8 132.381 289.283 131.214 290.248 130.249C291.214 129.283 292.381 128.8 293.75 128.8H298.25C299.619 128.8 300.786 129.283 301.752 130.248C302.717 131.214 303.2 132.381 303.2 133.75V138.25Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -585,7 +586,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_56"
                   d="M336 144V128H320V144C320.104 143.896 320.255 143.766 320.453 143.609C320.651 143.453 321.052 143.177 321.656 142.781C322.26 142.385 322.865 142.031 323.469 141.719C324.073 141.406 324.792 141.125 325.625 140.875C326.459 140.625 327.25 140.5 328 140.5C328.75 140.5 329.537 140.62 330.359 140.859C331.182 141.099 331.916 141.391 332.563 141.734C333.209 142.078 333.797 142.422 334.328 142.766C334.859 143.109 335.271 143.396 335.563 143.625C335.854 143.854 336 143.979 336 144Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -596,7 +597,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_57"
                   d="M352 128V144H368V128C367.896 128.104 367.745 128.234 367.547 128.391C367.349 128.547 366.948 128.823 366.344 129.219C365.74 129.615 365.135 129.969 364.531 130.281C363.927 130.594 363.208 130.875 362.375 131.125C361.541 131.375 360.75 131.5 360 131.5C359.25 131.5 358.464 131.38 357.641 131.141C356.818 130.901 356.083 130.609 355.437 130.266C354.792 129.922 354.203 129.578 353.672 129.234C353.14 128.891 352.729 128.604 352.437 128.375L352 128Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -606,7 +607,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_58"
                 d="M400 128H384V144H400V128Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -616,7 +617,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_59"
                   d="M432 144V128H416V144C416.104 143.896 416.255 143.766 416.453 143.609C416.651 143.453 417.052 143.177 417.656 142.781C418.26 142.385 418.865 142.031 419.469 141.719C420.073 141.406 420.792 141.125 421.625 140.875C422.459 140.625 423.25 140.5 424 140.5C424.75 140.5 425.537 140.62 426.359 140.859C427.182 141.099 427.916 141.391 428.563 141.734C429.209 142.078 429.797 142.422 430.328 142.766C430.859 143.109 431.271 143.396 431.563 143.625C431.854 143.854 432 143.979 432 144Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -626,7 +627,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_60"
                 d="M176 144H160V160H176V144Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -636,7 +637,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_61"
                   d="M192 149.5C192 147.979 191.463 146.682 190.391 145.609C189.318 144.537 188.021 144 186.5 144H176V160H192V149.5Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -647,7 +648,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_62"
                   d="M256 149.5V144H245.5C243.979 144 242.682 144.536 241.609 145.609C240.537 146.682 240 147.979 240 149.5V160H256V149.5Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -657,7 +658,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_63"
                 d="M272 144H256V160H272V144Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -667,7 +668,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_64"
                   d="M288 144H272V160H288C287.896 159.896 287.766 159.745 287.609 159.547C287.453 159.349 287.177 158.948 286.781 158.344C286.385 157.74 286.031 157.135 285.719 156.531C285.406 155.927 285.125 155.208 284.875 154.375C284.625 153.541 284.5 152.75 284.5 152C284.5 151.25 284.62 150.464 284.859 149.641C285.099 148.818 285.391 148.083 285.734 147.437C286.078 146.792 286.422 146.203 286.766 145.672C287.109 145.141 287.396 144.729 287.625 144.437L288 144Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -678,7 +679,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_65"
                   d="M319.2 154.25C319.2 155.619 318.717 156.786 317.752 157.752C316.786 158.717 315.619 159.2 314.25 159.2H309.75C308.381 159.2 307.214 158.717 306.249 157.752C305.283 156.786 304.8 155.619 304.8 154.25V149.75C304.8 148.381 305.283 147.214 306.248 146.249C307.214 145.283 308.381 144.8 309.75 144.8H314.25C315.619 144.8 316.786 145.283 317.752 146.248C318.717 147.214 319.2 148.381 319.2 149.75V154.25Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -689,7 +690,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_66"
                   d="M336 160H352V144H336C336.104 144.104 336.234 144.255 336.391 144.453C336.547 144.651 336.823 145.052 337.219 145.656C337.615 146.26 337.969 146.865 338.281 147.469C338.594 148.073 338.875 148.792 339.125 149.625C339.375 150.459 339.5 151.25 339.5 152C339.5 152.75 339.38 153.537 339.141 154.359C338.901 155.182 338.609 155.916 338.266 156.563C337.922 157.209 337.578 157.797 337.234 158.328C336.891 158.86 336.604 159.271 336.375 159.563L336 160Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -699,7 +700,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_67"
                 d="M368 144H352V160H368V144Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -708,7 +709,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_68"
                 d="M384 144H368V160H384V144Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -717,7 +718,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_69"
                 d="M400 144H384V160H400V144Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -727,7 +728,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_70"
                   d="M416 149.5C416 147.979 415.463 146.682 414.391 145.609C413.318 144.537 412.021 144 410.5 144H400V160H416V149.5Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -738,7 +739,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_71"
                   d="M64 176H80V160H64C64.1042 160.104 64.2344 160.255 64.3906 160.453C64.5467 160.651 64.8229 161.052 65.2187 161.656C65.6146 162.26 65.9688 162.865 66.2813 163.469C66.5938 164.073 66.875 164.792 67.125 165.625C67.3749 166.459 67.5 167.25 67.5 168C67.5 168.75 67.3802 169.537 67.1406 170.359C66.9011 171.182 66.6094 171.916 66.2656 172.563C65.9218 173.209 65.5781 173.797 65.2344 174.328C64.8907 174.86 64.6042 175.271 64.375 175.563L64 176Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -748,7 +749,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_72"
                 d="M96 160H80V176H96V160Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -758,7 +759,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_73"
                   d="M112 160H96V176H112C111.896 175.896 111.766 175.745 111.609 175.547C111.453 175.349 111.177 174.948 110.781 174.344C110.385 173.74 110.031 173.135 109.719 172.531C109.406 171.927 109.125 171.208 108.875 170.375C108.625 169.541 108.5 168.75 108.5 168C108.5 167.25 108.62 166.464 108.859 165.641C109.099 164.818 109.391 164.083 109.734 163.437C110.078 162.792 110.422 162.203 110.766 161.672C111.109 161.141 111.396 160.729 111.625 160.437L112 160Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -769,7 +770,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_74"
                   d="M143.2 170.25C143.2 171.619 142.717 172.786 141.752 173.752C140.786 174.717 139.619 175.2 138.25 175.2H133.75C132.381 175.2 131.214 174.717 130.249 173.752C129.283 172.786 128.8 171.619 128.8 170.25V165.75C128.8 164.381 129.283 163.214 130.248 162.249C131.214 161.283 132.381 160.8 133.75 160.8H138.25C139.619 160.8 140.786 161.283 141.752 162.248C142.717 163.214 143.2 164.381 143.2 165.75V170.25Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -780,7 +781,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_75"
                   d="M176 160H160V170.5C160 172.021 160.536 173.318 161.609 174.391C162.682 175.463 163.979 176 165.5 176H176V160Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -790,7 +791,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_76"
                 d="M192 160H176V176H192V160Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -799,7 +800,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_77"
                 d="M208 160H192V176H208V160Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -809,7 +810,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_78"
                   d="M224 165.5C224 163.979 223.463 162.682 222.391 161.609C221.318 160.537 220.021 160 218.5 160H208V176H224V165.5Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -820,7 +821,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_79"
                   d="M256 160H240V170.5C240 172.021 240.536 173.318 241.609 174.391C242.682 175.463 243.979 176 245.5 176H256V160Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -831,7 +832,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_80"
                   d="M272 160H256V176H266.5C268.021 176 269.318 175.463 270.391 174.391C271.463 173.318 272 172.021 272 170.5V160Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -842,7 +843,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_81"
                   d="M400 160H384V170.5C384 172.021 384.536 173.318 385.609 174.391C386.682 175.463 387.979 176 389.5 176H400V160Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -852,7 +853,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_82"
                 d="M416 160H400V176H416V160Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -861,7 +862,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_83"
                 d="M432 160H416V176H432V160Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -870,7 +871,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_84"
                 d="M448 160H432V176H448V160Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -879,7 +880,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_85"
                 d="M464 160H448V176H464V160Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -889,7 +890,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_86"
                   d="M480 160H464V176H480C479.896 175.896 479.766 175.745 479.609 175.547C479.453 175.349 479.177 174.948 478.781 174.344C478.385 173.74 478.031 173.135 477.719 172.531C477.406 171.927 477.125 171.208 476.875 170.375C476.625 169.541 476.5 168.75 476.5 168C476.5 167.25 476.62 166.464 476.859 165.641C477.099 164.818 477.391 164.083 477.734 163.437C478.078 162.792 478.422 162.203 478.766 161.672C479.109 161.141 479.396 160.729 479.625 160.437L480 160Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -900,7 +901,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_87"
                   d="M512 176H528V160H512C512.104 160.104 512.234 160.255 512.391 160.453C512.547 160.651 512.823 161.052 513.219 161.656C513.615 162.26 513.969 162.865 514.281 163.469C514.594 164.073 514.875 164.792 515.125 165.625C515.375 166.459 515.5 167.25 515.5 168C515.5 168.75 515.38 169.537 515.141 170.359C514.901 171.182 514.609 171.916 514.266 172.563C513.922 173.209 513.578 173.797 513.234 174.328C512.891 174.86 512.604 175.271 512.375 175.563L512 176Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -910,7 +911,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_88"
                 d="M544 160H528V176H544V160Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -920,7 +921,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_89"
                   d="M560 165.5C560 163.979 559.463 162.682 558.391 161.609C557.318 160.537 556.021 160 554.5 160H544V176H560V165.5Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -931,7 +932,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_90"
                   d="M32 176V192H48V176C47.896 176.104 47.7446 176.234 47.5469 176.391C47.3491 176.547 46.9478 176.823 46.3437 177.219C45.7395 177.615 45.1352 177.969 44.5312 178.281C43.9272 178.594 43.2083 178.875 42.3749 179.125C41.5414 179.375 40.7501 179.5 40 179.5C39.2499 179.5 38.4635 179.38 37.6406 179.141C36.8178 178.901 36.0834 178.609 35.4374 178.266C34.7915 177.922 34.2032 177.578 33.6718 177.234C33.1405 176.891 32.7291 176.604 32.4374 176.375L32 176Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -941,7 +942,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_91"
                 d="M96 176H80V192H96V176Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -951,7 +952,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_92"
                   d="M112 176V192H128V176C127.896 176.104 127.745 176.234 127.547 176.391C127.349 176.547 126.948 176.823 126.344 177.219C125.74 177.615 125.135 177.969 124.531 178.281C123.927 178.594 123.208 178.875 122.375 179.125C121.541 179.375 120.75 179.5 120 179.5C119.25 179.5 118.464 179.38 117.641 179.141C116.818 178.901 116.083 178.609 115.437 178.266C114.792 177.922 114.203 177.578 113.672 177.234C113.14 176.891 112.729 176.604 112.437 176.375L112 176Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -961,7 +962,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_93"
                 d="M224 176H208V192H224V176Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -971,7 +972,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_94"
                   d="M288 192H304V176H288C288.104 176.104 288.234 176.255 288.391 176.453C288.547 176.651 288.823 177.052 289.219 177.656C289.615 178.26 289.969 178.865 290.281 179.469C290.594 180.073 290.875 180.792 291.125 181.625C291.375 182.459 291.5 183.25 291.5 184C291.5 184.75 291.38 185.537 291.141 186.359C290.901 187.182 290.609 187.916 290.266 188.563C289.922 189.209 289.578 189.797 289.234 190.328C288.891 190.86 288.604 191.271 288.375 191.563L288 192Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -981,7 +982,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_95"
                 d="M320 176H304V192H320V176Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -991,7 +992,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_96"
                   d="M336 181.5C336 179.979 335.463 178.682 334.391 177.609C333.318 176.537 332.021 176 330.5 176H320V192H336V181.5Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -1002,7 +1003,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_97"
                   d="M368 176V192H384V176C383.896 176.104 383.745 176.234 383.547 176.391C383.349 176.547 382.948 176.823 382.344 177.219C381.74 177.615 381.135 177.969 380.531 178.281C379.927 178.594 379.208 178.875 378.375 179.125C377.541 179.375 376.75 179.5 376 179.5C375.25 179.5 374.464 179.38 373.641 179.141C372.818 178.901 372.083 178.609 371.437 178.266C370.792 177.922 370.203 177.578 369.672 177.234C369.14 176.891 368.729 176.604 368.437 176.375L368 176Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -1013,7 +1014,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_98"
                   d="M416 192V176H400V192C400.104 191.896 400.255 191.766 400.453 191.609C400.651 191.453 401.052 191.177 401.656 190.781C402.26 190.385 402.865 190.031 403.469 189.719C404.073 189.406 404.792 189.125 405.625 188.875C406.459 188.625 407.25 188.5 408 188.5C408.75 188.5 409.537 188.62 410.359 188.859C411.182 189.099 411.916 189.391 412.563 189.734C413.209 190.078 413.797 190.422 414.328 190.766C414.859 191.109 415.271 191.396 415.563 191.625C415.854 191.854 416 191.979 416 192Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -1023,7 +1024,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_99"
                 d="M448 176H432V192H448V176Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -1032,7 +1033,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_100"
                 d="M464 176H448V192H464V176Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -1042,7 +1043,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_101"
                   d="M496 176V192H512V176C511.896 176.104 511.745 176.234 511.547 176.391C511.349 176.547 510.948 176.823 510.344 177.219C509.74 177.615 509.135 177.969 508.531 178.281C507.927 178.594 507.208 178.875 506.375 179.125C505.541 179.375 504.75 179.5 504 179.5C503.25 179.5 502.464 179.38 501.641 179.141C500.818 178.901 500.083 178.609 499.437 178.266C498.792 177.922 498.203 177.578 497.672 177.234C497.14 176.891 496.729 176.604 496.437 176.375L496 176Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -1052,7 +1053,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_102"
                 d="M544 176H528V192H544V176Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -1062,7 +1063,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_103"
                   d="M560 176H544V192H554.5C556.021 192 557.318 191.463 558.391 190.391C559.463 189.318 560 188.021 560 186.5V176Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -1073,7 +1074,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_104"
                   d="M48 208V192H32V208C32.1042 207.896 32.2552 207.766 32.4531 207.609C32.651 207.453 33.0522 207.177 33.6563 206.781C34.2605 206.385 34.8646 206.031 35.4688 205.719C36.073 205.406 36.7917 205.125 37.6251 204.875C38.4586 204.625 39.2499 204.5 40 204.5C40.7501 204.5 41.5366 204.62 42.3594 204.859C43.1821 205.099 43.9165 205.391 44.5626 205.734C45.2086 206.078 45.797 206.422 46.3282 206.766C46.8594 207.109 47.271 207.396 47.5626 207.625C47.8541 207.854 48 207.979 48 208Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -1084,7 +1085,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_105"
                   d="M80 197.5V192H69.5C67.9792 192 66.6822 192.536 65.6094 193.609C64.5366 194.682 64 195.979 64 197.5V208H80V197.5Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -1094,7 +1095,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_106"
                 d="M96 192H80V208H96V192Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -1103,7 +1104,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_107"
                 d="M112 192H96V208H112V192Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -1112,7 +1113,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_108"
                 d="M128 192H112V208H128V192Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -1122,7 +1123,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_109"
                   d="M144 192H128V208H144C143.896 207.896 143.766 207.745 143.609 207.547C143.453 207.349 143.177 206.948 142.781 206.344C142.385 205.74 142.031 205.135 141.719 204.531C141.406 203.927 141.125 203.208 140.875 202.375C140.625 201.541 140.5 200.75 140.5 200C140.5 199.25 140.62 198.464 140.859 197.641C141.099 196.818 141.391 196.083 141.734 195.437C142.078 194.792 142.422 194.203 142.766 193.672C143.109 193.141 143.396 192.729 143.625 192.437L144 192Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -1133,7 +1134,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_110"
                   d="M160 192V208H176V192C175.896 192.104 175.745 192.234 175.547 192.391C175.349 192.547 174.948 192.823 174.344 193.219C173.74 193.615 173.135 193.969 172.531 194.281C171.927 194.594 171.208 194.875 170.375 195.125C169.541 195.375 168.75 195.5 168 195.5C167.25 195.5 166.464 195.38 165.641 195.141C164.818 194.901 164.083 194.609 163.437 194.266C162.792 193.922 162.203 193.578 161.672 193.234C161.14 192.891 160.729 192.604 160.437 192.375L160 192Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -1144,7 +1145,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_111"
                   d="M192 208H208V192H192C192.104 192.104 192.234 192.255 192.391 192.453C192.547 192.651 192.823 193.052 193.219 193.656C193.615 194.26 193.969 194.865 194.281 195.469C194.594 196.073 194.875 196.792 195.125 197.625C195.375 198.459 195.5 199.25 195.5 200C195.5 200.75 195.38 201.537 195.141 202.359C194.901 203.182 194.609 203.916 194.266 204.563C193.922 205.209 193.578 205.797 193.234 206.328C192.891 206.86 192.604 207.271 192.375 207.563L192 208Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -1155,7 +1156,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_112"
                   d="M224 192H208V208H218.5C220.021 208 221.318 207.463 222.391 206.391C223.463 205.318 224 204.021 224 202.5V192Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -1166,7 +1167,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_113"
                   d="M256 208H272V192H256C256.104 192.104 256.234 192.255 256.391 192.453C256.547 192.651 256.823 193.052 257.219 193.656C257.615 194.26 257.969 194.865 258.281 195.469C258.594 196.073 258.875 196.792 259.125 197.625C259.375 198.459 259.5 199.25 259.5 200C259.5 200.75 259.38 201.537 259.141 202.359C258.901 203.182 258.609 203.916 258.266 204.563C257.922 205.209 257.578 205.797 257.234 206.328C256.891 206.86 256.604 207.271 256.375 207.563L256 208Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -1177,7 +1178,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_114"
                   d="M288 192H272V208H288C287.896 207.896 287.766 207.745 287.609 207.547C287.453 207.349 287.177 206.948 286.781 206.344C286.385 205.74 286.031 205.135 285.719 204.531C285.406 203.927 285.125 203.208 284.875 202.375C284.625 201.541 284.5 200.75 284.5 200C284.5 199.25 284.62 198.464 284.859 197.641C285.099 196.818 285.391 196.083 285.734 195.437C286.078 194.792 286.422 194.203 286.766 193.672C287.109 193.141 287.396 192.729 287.625 192.437L288 192Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -1187,7 +1188,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_115"
                 d="M336 192H320V208H336V192Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -1197,7 +1198,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_116"
                   d="M352 208H368V192H352C352.104 192.104 352.234 192.255 352.391 192.453C352.547 192.651 352.823 193.052 353.219 193.656C353.615 194.26 353.969 194.865 354.281 195.469C354.594 196.073 354.875 196.792 355.125 197.625C355.375 198.459 355.5 199.25 355.5 200C355.5 200.75 355.38 201.537 355.141 202.359C354.901 203.182 354.609 203.916 354.266 204.563C353.922 205.209 353.578 205.797 353.234 206.328C352.891 206.86 352.604 207.271 352.375 207.563L352 208Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -1207,7 +1208,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_117"
                 d="M384 192H368V208H384V192Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -1217,7 +1218,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_118"
                   d="M448 192H432V202.5C432 204.021 432.536 205.318 433.609 206.391C434.682 207.463 435.979 208 437.5 208H448V192Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -1227,7 +1228,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_119"
                 d="M464 192H448V208H464V192Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -1237,7 +1238,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_120"
                   d="M480 192H464V208H480C479.896 207.896 479.766 207.745 479.609 207.547C479.453 207.349 479.177 206.948 478.781 206.344C478.385 205.74 478.031 205.135 477.719 204.531C477.406 203.927 477.125 203.208 476.875 202.375C476.625 201.541 476.5 200.75 476.5 200C476.5 199.25 476.62 198.464 476.859 197.641C477.099 196.818 477.391 196.083 477.734 195.437C478.078 194.792 478.422 194.203 478.766 193.672C479.109 193.141 479.396 192.729 479.625 192.437L480 192Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -1247,7 +1248,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_121"
                 d="M512 192H496V208H512V192Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -1256,7 +1257,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_122"
                 d="M528 192H512V208H528V192Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -1265,7 +1266,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_123"
                 d="M544 192H528V208H544V192Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -1275,7 +1276,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_124"
                   d="M64 213.5V208H53.5C51.9792 208 50.6822 208.536 49.6094 209.609C48.5366 210.682 48 211.979 48 213.5V224H64V213.5Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -1285,7 +1286,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_125"
                 d="M80 208H64V224H80V208Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -1295,7 +1296,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_126"
                   d="M96 208H80V224H90.5C92.021 224 93.3178 223.463 94.3906 222.391C95.4634 221.318 96 220.021 96 218.5V208Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -1306,7 +1307,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_127"
                   d="M160 213.5V208H149.5C147.979 208 146.682 208.536 145.609 209.609C144.537 210.682 144 211.979 144 213.5V224H160V213.5Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -1317,7 +1318,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_128"
                   d="M176 208H160V224H170.5C172.021 224 173.318 223.463 174.391 222.391C175.463 221.318 176 220.021 176 218.5V208Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -1327,7 +1328,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_129"
                 d="M336 208H320V224H336V208Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -1336,7 +1337,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_130"
                 d="M384 208H368V224H384V208Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -1345,7 +1346,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_131"
                 d="M400 208H384V224H400V208Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -1354,7 +1355,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_132"
                 d="M416 208H400V224H416V208Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -1364,7 +1365,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_133"
                   d="M432 213.5C432 211.979 431.463 210.682 430.391 209.609C429.318 208.537 428.021 208 426.5 208H416V224H432V213.5Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -1375,7 +1376,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_134"
                   d="M464 224V208H448V224C448.104 223.896 448.255 223.766 448.453 223.609C448.651 223.453 449.052 223.177 449.656 222.781C450.26 222.385 450.865 222.031 451.469 221.719C452.073 221.406 452.792 221.125 453.625 220.875C454.459 220.625 455.25 220.5 456 220.5C456.75 220.5 457.537 220.62 458.359 220.859C459.182 221.099 459.916 221.391 460.563 221.734C461.209 222.078 461.797 222.422 462.328 222.766C462.859 223.109 463.271 223.396 463.563 223.625C463.854 223.854 464 223.979 464 224Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -1386,7 +1387,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_135"
                   d="M512 208H496V218.5C496 220.021 496.536 221.318 497.609 222.391C498.682 223.463 499.979 224 501.5 224H512V208Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -1396,7 +1397,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_136"
                 d="M528 208H512V224H528V208Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -1406,7 +1407,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_137"
                   d="M544 208H528V224H538.5C540.021 224 541.318 223.463 542.391 222.391C543.463 221.318 544 220.021 544 218.5V208Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -1417,7 +1418,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_138"
                   d="M64 240V224H48V240C48.1042 239.896 48.2552 239.766 48.4531 239.609C48.651 239.453 49.0522 239.177 49.6563 238.781C50.2605 238.385 50.8646 238.031 51.4688 237.719C52.073 237.406 52.7917 237.125 53.6251 236.875C54.4586 236.625 55.2499 236.5 56 236.5C56.7501 236.5 57.5366 236.62 58.3594 236.859C59.1821 237.099 59.9165 237.391 60.5626 237.734C61.2086 238.078 61.797 238.422 62.3282 238.766C62.8594 239.109 63.271 239.396 63.5626 239.625C63.8541 239.854 64 239.979 64 240Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -1428,7 +1429,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_139"
                   d="M96 224V240H112V224C111.896 224.104 111.745 224.234 111.547 224.391C111.349 224.547 110.948 224.823 110.344 225.219C109.74 225.615 109.135 225.969 108.531 226.281C107.927 226.594 107.208 226.875 106.375 227.125C105.541 227.375 104.75 227.5 104 227.5C103.25 227.5 102.464 227.38 101.641 227.141C100.818 226.901 100.083 226.609 99.4374 226.266C98.7915 225.922 98.2032 225.578 97.6718 225.234C97.1405 224.891 96.7291 224.604 96.4374 224.375L96 224Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -1439,7 +1440,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_140"
                   d="M128 240H144V224H128C128.104 224.104 128.234 224.255 128.391 224.453C128.547 224.651 128.823 225.052 129.219 225.656C129.615 226.26 129.969 226.865 130.281 227.469C130.594 228.073 130.875 228.792 131.125 229.625C131.375 230.459 131.5 231.25 131.5 232C131.5 232.75 131.38 233.537 131.141 234.359C130.901 235.182 130.609 235.916 130.266 236.563C129.922 237.209 129.578 237.797 129.234 238.328C128.891 238.86 128.604 239.271 128.375 239.563L128 240Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -1449,7 +1450,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_141"
                 d="M160 224H144V240H160V224Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -1459,7 +1460,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_142"
                   d="M176 240H192V224H176C176.104 224.104 176.234 224.255 176.391 224.453C176.547 224.651 176.823 225.052 177.219 225.656C177.615 226.26 177.969 226.865 178.281 227.469C178.594 228.073 178.875 228.792 179.125 229.625C179.375 230.459 179.5 231.25 179.5 232C179.5 232.75 179.38 233.537 179.141 234.359C178.901 235.182 178.609 235.916 178.266 236.563C177.922 237.209 177.578 237.797 177.234 238.328C176.891 238.86 176.604 239.271 176.375 239.563L176 240Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -1470,7 +1471,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_143"
                   d="M208 229.5C208 227.979 207.463 226.682 206.391 225.609C205.318 224.537 204.021 224 202.5 224H192V240H208V229.5Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -1481,7 +1482,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_144"
                   d="M239.2 234.25C239.2 235.619 238.717 236.786 237.752 237.752C236.786 238.717 235.619 239.2 234.25 239.2H229.75C228.381 239.2 227.214 238.717 226.249 237.752C225.283 236.786 224.8 235.619 224.8 234.25V229.75C224.8 228.381 225.283 227.214 226.248 226.249C227.214 225.283 228.381 224.8 229.75 224.8H234.25C235.619 224.8 236.786 225.283 237.752 226.248C238.717 227.214 239.2 228.381 239.2 229.75V234.25Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -1492,7 +1493,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_145"
                   d="M288 229.5V224H277.5C275.979 224 274.682 224.536 273.609 225.609C272.537 226.682 272 227.979 272 229.5V240H288V229.5Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -1502,7 +1503,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_146"
                 d="M304 224H288V240H304V224Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -1511,7 +1512,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_147"
                 d="M320 224H304V240H320V224Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -1521,7 +1522,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_148"
                   d="M336 224H320V240H330.5C332.021 240 333.318 239.463 334.391 238.391C335.463 237.318 336 236.021 336 234.5V224Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -1532,7 +1533,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_149"
                   d="M368 229.5V224H357.5C355.979 224 354.682 224.536 353.609 225.609C352.537 226.682 352 227.979 352 229.5V240H368V229.5Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -1543,7 +1544,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_150"
                   d="M384 224H368V240H378.5C380.021 240 381.318 239.463 382.391 238.391C383.463 237.318 384 236.021 384 234.5V224Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -1554,7 +1555,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_151"
                   d="M432 224H416V234.5C416 236.021 416.536 237.318 417.609 238.391C418.682 239.463 419.979 240 421.5 240H432V224Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -1565,7 +1566,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_152"
                   d="M448 224H432V240H448C447.896 239.896 447.766 239.745 447.609 239.547C447.453 239.349 447.177 238.948 446.781 238.344C446.385 237.74 446.031 237.135 445.719 236.531C445.406 235.927 445.125 235.208 444.875 234.375C444.625 233.541 444.5 232.75 444.5 232C444.5 231.25 444.62 230.464 444.859 229.641C445.099 228.818 445.391 228.083 445.734 227.437C446.078 226.792 446.422 226.203 446.766 225.672C447.109 225.141 447.396 224.729 447.625 224.437L448 224Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -1576,7 +1577,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_153"
                   d="M47.2 250.25C47.2 251.619 46.7169 252.786 45.7515 253.752C44.7861 254.717 43.6189 255.2 42.2499 255.2H37.7501C36.3814 255.2 35.2141 254.717 34.2486 253.752C33.2832 252.786 32.8 251.619 32.8 250.25V245.75C32.8 244.381 33.2829 243.214 34.2485 242.249C35.2141 241.283 36.3813 240.8 37.7501 240.8H42.2501C43.619 240.8 44.7862 241.283 45.7517 242.248C46.7171 243.214 47.2 244.381 47.2 245.75V250.25Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -1587,7 +1588,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_154"
                   d="M64 240V256H80V240C79.896 240.104 79.7446 240.234 79.5469 240.391C79.3491 240.547 78.9478 240.823 78.3437 241.219C77.7395 241.615 77.1352 241.969 76.5312 242.281C75.9272 242.594 75.2083 242.875 74.3749 243.125C73.5414 243.375 72.7501 243.5 72 243.5C71.2499 243.5 70.4635 243.38 69.6406 243.141C68.8178 242.901 68.0834 242.609 67.4374 242.266C66.7915 241.922 66.2032 241.578 65.6718 241.234C65.1405 240.891 64.7291 240.604 64.4374 240.375L64 240Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -1597,7 +1598,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_155"
                 d="M112 240H96V256H112V240Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -1607,7 +1608,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_156"
                   d="M160 256V240H144V256C144.104 255.896 144.255 255.766 144.453 255.609C144.651 255.453 145.052 255.177 145.656 254.781C146.26 254.385 146.865 254.031 147.469 253.719C148.073 253.406 148.792 253.125 149.625 252.875C150.459 252.625 151.25 252.5 152 252.5C152.75 252.5 153.537 252.62 154.359 252.859C155.182 253.099 155.916 253.391 156.563 253.734C157.209 254.078 157.797 254.422 158.328 254.766C158.859 255.109 159.271 255.396 159.563 255.625C159.854 255.854 160 255.979 160 256Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -1618,7 +1619,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_157"
                   d="M208 256V240H192V256C192.104 255.896 192.255 255.766 192.453 255.609C192.651 255.453 193.052 255.177 193.656 254.781C194.26 254.385 194.865 254.031 195.469 253.719C196.073 253.406 196.792 253.125 197.625 252.875C198.459 252.625 199.25 252.5 200 252.5C200.75 252.5 201.537 252.62 202.359 252.859C203.182 253.099 203.916 253.391 204.563 253.734C205.209 254.078 205.797 254.422 206.328 254.766C206.859 255.109 207.271 255.396 207.563 255.625C207.854 255.854 208 255.979 208 256Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -1629,7 +1630,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_158"
                   d="M288 256V240H272V256C272.104 255.896 272.255 255.766 272.453 255.609C272.651 255.453 273.052 255.177 273.656 254.781C274.26 254.385 274.865 254.031 275.469 253.719C276.073 253.406 276.792 253.125 277.625 252.875C278.459 252.625 279.25 252.5 280 252.5C280.75 252.5 281.537 252.62 282.359 252.859C283.182 253.099 283.916 253.391 284.563 253.734C285.209 254.078 285.797 254.422 286.328 254.766C286.859 255.109 287.271 255.396 287.563 255.625C287.854 255.854 288 255.979 288 256Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -1640,7 +1641,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_159"
                   d="M320 256V240H304V256C304.104 255.896 304.255 255.766 304.453 255.609C304.651 255.453 305.052 255.177 305.656 254.781C306.26 254.385 306.865 254.031 307.469 253.719C308.073 253.406 308.792 253.125 309.625 252.875C310.459 252.625 311.25 252.5 312 252.5C312.75 252.5 313.537 252.62 314.359 252.859C315.182 253.099 315.916 253.391 316.563 253.734C317.209 254.078 317.797 254.422 318.328 254.766C318.859 255.109 319.271 255.396 319.563 255.625C319.854 255.854 320 255.979 320 256Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -1651,7 +1652,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_160"
                   d="M368 256V240H352V256C352.104 255.896 352.255 255.766 352.453 255.609C352.651 255.453 353.052 255.177 353.656 254.781C354.26 254.385 354.865 254.031 355.469 253.719C356.073 253.406 356.792 253.125 357.625 252.875C358.459 252.625 359.25 252.5 360 252.5C360.75 252.5 361.537 252.62 362.359 252.859C363.182 253.099 363.916 253.391 364.563 253.734C365.209 254.078 365.797 254.422 366.328 254.766C366.859 255.109 367.271 255.396 367.563 255.625C367.854 255.854 368 255.979 368 256Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -1662,7 +1663,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_161"
                   d="M384 256H400V240H384C384.104 240.104 384.234 240.255 384.391 240.453C384.547 240.651 384.823 241.052 385.219 241.656C385.615 242.26 385.969 242.865 386.281 243.469C386.594 244.073 386.875 244.792 387.125 245.625C387.375 246.459 387.5 247.25 387.5 248C387.5 248.75 387.38 249.537 387.141 250.359C386.901 251.182 386.609 251.916 386.266 252.563C385.922 253.209 385.578 253.797 385.234 254.328C384.891 254.86 384.604 255.271 384.375 255.563L384 256Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -1673,7 +1674,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_162"
                   d="M416 240H400V256H416C415.896 255.896 415.766 255.745 415.609 255.547C415.453 255.349 415.177 254.948 414.781 254.344C414.385 253.74 414.031 253.135 413.719 252.531C413.406 251.927 413.125 251.208 412.875 250.375C412.625 249.541 412.5 248.75 412.5 248C412.5 247.25 412.62 246.464 412.859 245.641C413.099 244.818 413.391 244.083 413.734 243.437C414.078 242.792 414.422 242.203 414.766 241.672C415.109 241.141 415.396 240.729 415.625 240.437L416 240Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -1684,7 +1685,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_163"
                   d="M448 256H464V240H448C448.104 240.104 448.234 240.255 448.391 240.453C448.547 240.651 448.823 241.052 449.219 241.656C449.615 242.26 449.969 242.865 450.281 243.469C450.594 244.073 450.875 244.792 451.125 245.625C451.375 246.459 451.5 247.25 451.5 248C451.5 248.75 451.38 249.537 451.141 250.359C450.901 251.182 450.609 251.916 450.266 252.563C449.922 253.209 449.578 253.797 449.234 254.328C448.891 254.86 448.604 255.271 448.375 255.563L448 256Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -1695,7 +1696,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_164"
                   d="M480 240H464V256H480C479.896 255.896 479.766 255.745 479.609 255.547C479.453 255.349 479.177 254.948 478.781 254.344C478.385 253.74 478.031 253.135 477.719 252.531C477.406 251.927 477.125 251.208 476.875 250.375C476.625 249.541 476.5 248.75 476.5 248C476.5 247.25 476.62 246.464 476.859 245.641C477.099 244.818 477.391 244.083 477.734 243.437C478.078 242.792 478.422 242.203 478.766 241.672C479.109 241.141 479.396 240.729 479.625 240.437L480 240Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -1706,7 +1707,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_165"
                   d="M512 240V256H528V240C527.896 240.104 527.745 240.234 527.547 240.391C527.349 240.547 526.948 240.823 526.344 241.219C525.74 241.615 525.135 241.969 524.531 242.281C523.927 242.594 523.208 242.875 522.375 243.125C521.541 243.375 520.75 243.5 520 243.5C519.25 243.5 518.464 243.38 517.641 243.141C516.818 242.901 516.083 242.609 515.437 242.266C514.792 241.922 514.203 241.578 513.672 241.234C513.14 240.891 512.729 240.604 512.437 240.375L512 240Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -1717,7 +1718,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_166"
                   d="M559.2 250.25C559.2 251.619 558.717 252.786 557.752 253.752C556.786 254.717 555.619 255.2 554.25 255.2H549.75C548.381 255.2 547.214 254.717 546.249 253.752C545.283 252.786 544.8 251.619 544.8 250.25V245.75C544.8 244.381 545.283 243.214 546.248 242.249C547.214 241.283 548.381 240.8 549.75 240.8H554.25C555.619 240.8 556.786 241.283 557.752 242.248C558.717 243.214 559.2 244.381 559.2 245.75V250.25Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -1728,7 +1729,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_167"
                   d="M64 261.5V256H53.5C51.9792 256 50.6822 256.536 49.6094 257.609C48.5366 258.682 48 259.979 48 261.5V272H64V261.5Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -1739,7 +1740,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_168"
                   d="M80 256H64V272H74.5C76.021 272 77.3178 271.463 78.3906 270.391C79.4634 269.318 80 268.021 80 266.5V256Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -1750,7 +1751,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_169"
                   d="M112 272V256H96V272C96.1042 271.896 96.2552 271.766 96.4531 271.609C96.651 271.453 97.0522 271.177 97.6563 270.781C98.2605 270.385 98.8646 270.031 99.4688 269.719C100.073 269.406 100.792 269.125 101.625 268.875C102.459 268.625 103.25 268.5 104 268.5C104.75 268.5 105.537 268.62 106.359 268.859C107.182 269.099 107.916 269.391 108.563 269.734C109.209 270.078 109.797 270.422 110.328 270.766C110.859 271.109 111.271 271.396 111.563 271.625C111.854 271.854 112 271.979 112 272Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -1761,7 +1762,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_170"
                   d="M496 272H512V256H496C496.104 256.104 496.234 256.255 496.391 256.453C496.547 256.651 496.823 257.052 497.219 257.656C497.615 258.26 497.969 258.865 498.281 259.469C498.594 260.073 498.875 260.792 499.125 261.625C499.375 262.459 499.5 263.25 499.5 264C499.5 264.75 499.38 265.537 499.141 266.359C498.901 267.182 498.609 267.916 498.266 268.563C497.922 269.209 497.578 269.797 497.234 270.328C496.891 270.86 496.604 271.271 496.375 271.563L496 272Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -1771,7 +1772,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_171"
                 d="M528 256H512V272H528V256Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -1781,7 +1782,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_172"
                   d="M544 261.5C544 259.979 543.463 258.682 542.391 257.609C541.318 256.537 540.021 256 538.5 256H528V272H544V261.5Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -1792,7 +1793,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_173"
                   d="M32 288H48V272H32C32.1042 272.104 32.2344 272.255 32.3906 272.453C32.5467 272.651 32.8229 273.052 33.2187 273.656C33.6146 274.26 33.9688 274.865 34.2813 275.469C34.5938 276.073 34.875 276.792 35.125 277.625C35.3749 278.459 35.5 279.25 35.5 280C35.5 280.75 35.3802 281.537 35.1406 282.359C34.9011 283.182 34.6094 283.916 34.2656 284.563C33.9218 285.209 33.5781 285.797 33.2344 286.328C32.8907 286.86 32.6042 287.271 32.375 287.563L32 288Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -1803,7 +1804,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_174"
                   d="M64 272H48V288H58.5C60.021 288 61.3178 287.463 62.3906 286.391C63.4634 285.318 64 284.021 64 282.5V272Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -1813,7 +1814,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_175"
                 d="M528 272H512V288H528V272Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -1823,7 +1824,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_176"
                   d="M544 272H528V288H538.5C540.021 288 541.318 287.463 542.391 286.391C543.463 285.318 544 284.021 544 282.5V272Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -1834,7 +1835,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_177"
                   d="M64 304H80V288H64C64.1042 288.104 64.2344 288.255 64.3906 288.453C64.5467 288.651 64.8229 289.052 65.2187 289.656C65.6146 290.26 65.9688 290.865 66.2813 291.469C66.5938 292.073 66.875 292.792 67.125 293.625C67.3749 294.459 67.5 295.25 67.5 296C67.5 296.75 67.3802 297.537 67.1406 298.359C66.9011 299.182 66.6094 299.916 66.2656 300.563C65.9218 301.209 65.5781 301.797 65.2344 302.328C64.8907 302.86 64.6042 303.271 64.375 303.563L64 304Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -1844,7 +1845,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_178"
                 d="M96 288H80V304H96V288Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -1854,7 +1855,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_179"
                   d="M112 293.5C112 291.979 111.463 290.682 110.391 289.609C109.318 288.537 108.021 288 106.5 288H96V304H112V293.5Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -1865,7 +1866,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_180"
                   d="M480 304H496V288H480C480.104 288.104 480.234 288.255 480.391 288.453C480.547 288.651 480.823 289.052 481.219 289.656C481.615 290.26 481.969 290.865 482.281 291.469C482.594 292.073 482.875 292.792 483.125 293.625C483.375 294.459 483.5 295.25 483.5 296C483.5 296.75 483.38 297.537 483.141 298.359C482.901 299.182 482.609 299.916 482.266 300.563C481.922 301.209 481.578 301.797 481.234 302.328C480.891 302.86 480.604 303.271 480.375 303.563L480 304Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -1875,7 +1876,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_181"
                 d="M512 288H496V304H512V288Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -1885,7 +1886,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_182"
                   d="M528 288H512V304H522.5C524.021 304 525.318 303.463 526.391 302.391C527.463 301.318 528 300.021 528 298.5V288Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -1896,7 +1897,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_183"
                   d="M559.2 298.25C559.2 299.619 558.717 300.786 557.752 301.752C556.786 302.717 555.619 303.2 554.25 303.2H549.75C548.381 303.2 547.214 302.717 546.249 301.752C545.283 300.786 544.8 299.619 544.8 298.25V293.75C544.8 292.381 545.283 291.214 546.248 290.249C547.214 289.283 548.381 288.8 549.75 288.8H554.25C555.619 288.8 556.786 289.283 557.752 290.248C558.717 291.214 559.2 292.381 559.2 293.75V298.25Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -1907,7 +1908,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_184"
                   d="M32 320H48V304H32C32.1042 304.104 32.2344 304.255 32.3906 304.453C32.5467 304.651 32.8229 305.052 33.2187 305.656C33.6146 306.26 33.9688 306.865 34.2813 307.469C34.5938 308.073 34.875 308.792 35.125 309.625C35.3749 310.459 35.5 311.25 35.5 312C35.5 312.75 35.3802 313.537 35.1406 314.359C34.9011 315.182 34.6094 315.916 34.2656 316.563C33.9218 317.209 33.5781 317.797 33.2344 318.328C32.8907 318.86 32.6042 319.271 32.375 319.563L32 320Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -1918,7 +1919,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_185"
                   d="M64 309.5C64 307.979 63.4634 306.682 62.3906 305.609C61.3178 304.537 60.021 304 58.5 304H48V320H64V309.5Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -1929,7 +1930,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_186"
                   d="M96 304H80V314.5C80 316.021 80.5365 317.318 81.6094 318.391C82.6824 319.463 83.9792 320 85.5 320H96V304Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -1939,7 +1940,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_187"
                 d="M112 304H96V320H112V304Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -1948,7 +1949,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_188"
                 d="M64 320H48V336H64V320Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -1957,7 +1958,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_189"
                 d="M112 320H96V336H112V320Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -1967,7 +1968,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_190"
                   d="M528 325.5V320H517.5C515.979 320 514.682 320.536 513.609 321.609C512.537 322.682 512 323.979 512 325.5V336H528V325.5Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -1977,7 +1978,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_191"
                 d="M544 320H528V336H544V320Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -1987,7 +1988,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_192"
                   d="M560 325.5C560 323.979 559.463 322.682 558.391 321.609C557.318 320.537 556.021 320 554.5 320H544V336H560V325.5Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -1997,7 +1998,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_193"
                 d="M64 336H48V352H64V336Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -2006,7 +2007,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_194"
                 d="M80 336H64V352H80V336Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -2015,7 +2016,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_195"
                 d="M96 336H80V352H96V336Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -2025,7 +2026,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_196"
                   d="M112 336H96V352H106.5C108.021 352 109.318 351.463 110.391 350.391C111.463 349.318 112 348.021 112 346.5V336Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -2036,7 +2037,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_197"
                   d="M160 352H176V336H160C160.104 336.104 160.234 336.255 160.391 336.453C160.547 336.651 160.823 337.052 161.219 337.656C161.615 338.26 161.969 338.865 162.281 339.469C162.594 340.073 162.875 340.792 163.125 341.625C163.375 342.459 163.5 343.25 163.5 344C163.5 344.75 163.38 345.537 163.141 346.359C162.901 347.182 162.609 347.916 162.266 348.563C161.922 349.209 161.578 349.797 161.234 350.328C160.891 350.86 160.604 351.271 160.375 351.563L160 352Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -2046,7 +2047,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_198"
                 d="M192 336H176V352H192V336Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -2056,7 +2057,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_199"
                   d="M208 336H192V352H208C207.896 351.896 207.766 351.745 207.609 351.547C207.453 351.349 207.177 350.948 206.781 350.344C206.385 349.74 206.031 349.135 205.719 348.531C205.406 347.927 205.125 347.208 204.875 346.375C204.625 345.541 204.5 344.75 204.5 344C204.5 343.25 204.62 342.464 204.859 341.641C205.099 340.818 205.391 340.083 205.734 339.437C206.078 338.792 206.422 338.203 206.766 337.672C207.109 337.141 207.396 336.729 207.625 336.437L208 336Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -2067,7 +2068,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_200"
                   d="M224 352H240V336H224C224.104 336.104 224.234 336.255 224.391 336.453C224.547 336.651 224.823 337.052 225.219 337.656C225.615 338.26 225.969 338.865 226.281 339.469C226.594 340.073 226.875 340.792 227.125 341.625C227.375 342.459 227.5 343.25 227.5 344C227.5 344.75 227.38 345.537 227.141 346.359C226.901 347.182 226.609 347.916 226.266 348.563C225.922 349.209 225.578 349.797 225.234 350.328C224.891 350.86 224.604 351.271 224.375 351.563L224 352Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -2078,7 +2079,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_201"
                   d="M256 341.5C256 339.979 255.463 338.682 254.391 337.609C253.318 336.537 252.021 336 250.5 336H240V352H256V341.5Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -2089,7 +2090,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_202"
                   d="M288 352H304V336H288C288.104 336.104 288.234 336.255 288.391 336.453C288.547 336.651 288.823 337.052 289.219 337.656C289.615 338.26 289.969 338.865 290.281 339.469C290.594 340.073 290.875 340.792 291.125 341.625C291.375 342.459 291.5 343.25 291.5 344C291.5 344.75 291.38 345.537 291.141 346.359C290.901 347.182 290.609 347.916 290.266 348.563C289.922 349.209 289.578 349.797 289.234 350.328C288.891 350.86 288.604 351.271 288.375 351.563L288 352Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -2100,7 +2101,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_203"
                   d="M320 336H304V352H320C319.896 351.896 319.766 351.745 319.609 351.547C319.453 351.349 319.177 350.948 318.781 350.344C318.385 349.74 318.031 349.135 317.719 348.531C317.406 347.927 317.125 347.208 316.875 346.375C316.625 345.541 316.5 344.75 316.5 344C316.5 343.25 316.62 342.464 316.859 341.641C317.099 340.818 317.391 340.083 317.734 339.437C318.078 338.792 318.422 338.203 318.766 337.672C319.109 337.141 319.396 336.729 319.625 336.437L320 336Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -2111,7 +2112,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_204"
                   d="M351.2 346.25C351.2 347.619 350.717 348.786 349.752 349.752C348.786 350.717 347.619 351.2 346.25 351.2H341.75C340.381 351.2 339.214 350.717 338.249 349.752C337.283 348.786 336.8 347.619 336.8 346.25V341.75C336.8 340.381 337.283 339.214 338.248 338.249C339.214 337.283 340.381 336.8 341.75 336.8H346.25C347.619 336.8 348.786 337.283 349.752 338.248C350.717 339.214 351.2 340.381 351.2 341.75V346.25Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -2122,7 +2123,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_205"
                   d="M368 352H384V336H368C368.104 336.104 368.234 336.255 368.391 336.453C368.547 336.651 368.823 337.052 369.219 337.656C369.615 338.26 369.969 338.865 370.281 339.469C370.594 340.073 370.875 340.792 371.125 341.625C371.375 342.459 371.5 343.25 371.5 344C371.5 344.75 371.38 345.537 371.141 346.359C370.901 347.182 370.609 347.916 370.266 348.563C369.922 349.209 369.578 349.797 369.234 350.328C368.891 350.86 368.604 351.271 368.375 351.563L368 352Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -2132,7 +2133,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_206"
                 d="M400 336H384V352H400V336Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -2141,7 +2142,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_207"
                 d="M416 336H400V352H416V336Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -2151,7 +2152,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_208"
                   d="M432 336H416V352H432C431.896 351.896 431.766 351.745 431.609 351.547C431.453 351.349 431.177 350.948 430.781 350.344C430.385 349.74 430.031 349.135 429.719 348.531C429.406 347.927 429.125 347.208 428.875 346.375C428.625 345.541 428.5 344.75 428.5 344C428.5 343.25 428.62 342.464 428.859 341.641C429.099 340.818 429.391 340.083 429.734 339.437C430.078 338.792 430.422 338.203 430.766 337.672C431.109 337.141 431.396 336.729 431.625 336.437L432 336Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -2162,7 +2163,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_209"
                   d="M448 336V352H464V336C463.896 336.104 463.745 336.234 463.547 336.391C463.349 336.547 462.948 336.823 462.344 337.219C461.74 337.615 461.135 337.969 460.531 338.281C459.927 338.594 459.208 338.875 458.375 339.125C457.541 339.375 456.75 339.5 456 339.5C455.25 339.5 454.464 339.38 453.641 339.141C452.818 338.901 452.083 338.609 451.437 338.266C450.792 337.922 450.203 337.578 449.672 337.234C449.14 336.891 448.729 336.604 448.437 336.375L448 336Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -2173,7 +2174,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_210"
                   d="M496 341.5V336H485.5C483.979 336 482.682 336.536 481.609 337.609C480.537 338.682 480 339.979 480 341.5V352H496V341.5Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -2183,7 +2184,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_211"
                 d="M512 336H496V352H512V336Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -2193,7 +2194,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_212"
                   d="M528 336H512V352H522.5C524.021 352 525.318 351.463 526.391 350.391C527.463 349.318 528 348.021 528 346.5V336Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -2203,7 +2204,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_213"
                 d="M560 336H544V352H560V336Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -2213,7 +2214,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_214"
                   d="M64 368V352H48V368C48.1042 367.896 48.2552 367.766 48.4531 367.609C48.651 367.453 49.0522 367.177 49.6563 366.781C50.2605 366.385 50.8646 366.031 51.4688 365.719C52.073 365.406 52.7917 365.125 53.6251 364.875C54.4586 364.625 55.2499 364.5 56 364.5C56.7501 364.5 57.5366 364.62 58.3594 364.859C59.1821 365.099 59.9165 365.391 60.5626 365.734C61.2086 366.078 61.797 366.422 62.3282 366.766C62.8594 367.109 63.271 367.396 63.5626 367.625C63.8541 367.854 64 367.979 64 368Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -2223,7 +2224,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_215"
                 d="M96 352H80V368H96V352Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -2233,7 +2234,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_216"
                   d="M143.2 362.25C143.2 363.619 142.717 364.786 141.752 365.752C140.786 366.717 139.619 367.2 138.25 367.2H133.75C132.381 367.2 131.214 366.717 130.249 365.752C129.283 364.786 128.8 363.619 128.8 362.25V357.75C128.8 356.381 129.283 355.214 130.248 354.249C131.214 353.283 132.381 352.8 133.75 352.8H138.25C139.619 352.8 140.786 353.283 141.752 354.248C142.717 355.214 143.2 356.381 143.2 357.75V362.25Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -2244,7 +2245,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_217"
                   d="M256 368V352H240V368C240.104 367.896 240.255 367.766 240.453 367.609C240.651 367.453 241.052 367.177 241.656 366.781C242.26 366.385 242.865 366.031 243.469 365.719C244.073 365.406 244.792 365.125 245.625 364.875C246.459 364.625 247.25 364.5 248 364.5C248.75 364.5 249.537 364.62 250.359 364.859C251.182 365.099 251.916 365.391 252.563 365.734C253.209 366.078 253.797 366.422 254.328 366.766C254.859 367.109 255.271 367.396 255.563 367.625C255.854 367.854 256 367.979 256 368Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -2255,7 +2256,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_218"
                   d="M287.2 362.25C287.2 363.619 286.717 364.786 285.752 365.752C284.786 366.717 283.619 367.2 282.25 367.2H277.75C276.381 367.2 275.214 366.717 274.249 365.752C273.283 364.786 272.8 363.619 272.8 362.25V357.75C272.8 356.381 273.283 355.214 274.248 354.249C275.214 353.283 276.381 352.8 277.75 352.8H282.25C283.619 352.8 284.786 353.283 285.752 354.248C286.717 355.214 287.2 356.381 287.2 357.75V362.25Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -2266,7 +2267,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_219"
                   d="M400 368V352H384V368C384.104 367.896 384.255 367.766 384.453 367.609C384.651 367.453 385.052 367.177 385.656 366.781C386.26 366.385 386.865 366.031 387.469 365.719C388.073 365.406 388.792 365.125 389.625 364.875C390.459 364.625 391.25 364.5 392 364.5C392.75 364.5 393.537 364.62 394.359 364.859C395.182 365.099 395.916 365.391 396.563 365.734C397.209 366.078 397.797 366.422 398.328 366.766C398.859 367.109 399.271 367.396 399.563 367.625C399.854 367.854 400 367.979 400 368Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -2277,7 +2278,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_220"
                   d="M432 368H448V352H432C432.104 352.104 432.234 352.255 432.391 352.453C432.547 352.651 432.823 353.052 433.219 353.656C433.615 354.26 433.969 354.865 434.281 355.469C434.594 356.073 434.875 356.792 435.125 357.625C435.375 358.459 435.5 359.25 435.5 360C435.5 360.75 435.38 361.537 435.141 362.359C434.901 363.182 434.609 363.916 434.266 364.563C433.922 365.209 433.578 365.797 433.234 366.328C432.891 366.86 432.604 367.271 432.375 367.563L432 368Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -2287,7 +2288,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_221"
                 d="M464 352H448V368H464V352Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -2296,7 +2297,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_222"
                 d="M480 352H464V368H480V352Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -2305,7 +2306,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_223"
                 d="M496 352H480V368H496V352Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -2315,7 +2316,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_224"
                   d="M512 352H496V368H506.5C508.021 368 509.318 367.463 510.391 366.391C511.463 365.318 512 364.021 512 362.5V352Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -2326,7 +2327,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_225"
                   d="M528 368H544V352H528C528.104 352.104 528.234 352.255 528.391 352.453C528.547 352.651 528.823 353.052 529.219 353.656C529.615 354.26 529.969 354.865 530.281 355.469C530.594 356.073 530.875 356.792 531.125 357.625C531.375 358.459 531.5 359.25 531.5 360C531.5 360.75 531.38 361.537 531.141 362.359C530.901 363.182 530.609 363.916 530.266 364.563C529.922 365.209 529.578 365.797 529.234 366.328C528.891 366.86 528.604 367.271 528.375 367.563L528 368Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -2336,7 +2337,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_226"
                 d="M560 352H544V368H560V352Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -2346,7 +2347,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_227"
                   d="M32 368V384H48V368C47.896 368.104 47.7446 368.234 47.5469 368.391C47.3491 368.547 46.9478 368.823 46.3437 369.219C45.7395 369.615 45.1352 369.969 44.5312 370.281C43.9272 370.594 43.2083 370.875 42.3749 371.125C41.5414 371.375 40.7501 371.5 40 371.5C39.2499 371.5 38.4635 371.38 37.6406 371.141C36.8178 370.901 36.0834 370.609 35.4374 370.266C34.7915 369.922 34.2032 369.578 33.6718 369.234C33.1405 368.891 32.7291 368.604 32.4374 368.375L32 368Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -2356,7 +2357,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_228"
                 d="M96 368H80V384H96V368Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -2365,7 +2366,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_229"
                 d="M112 368H96V384H112V368Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -2375,7 +2376,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_230"
                   d="M128 373.5C128 371.979 127.463 370.682 126.391 369.609C125.318 368.537 124.021 368 122.5 368H112V384H128V373.5Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -2386,7 +2387,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_231"
                   d="M175.2 378.25C175.2 379.619 174.717 380.786 173.752 381.752C172.786 382.717 171.619 383.2 170.25 383.2H165.75C164.381 383.2 163.214 382.717 162.249 381.752C161.283 380.786 160.8 379.619 160.8 378.25V373.75C160.8 372.381 161.283 371.214 162.248 370.249C163.214 369.283 164.381 368.8 165.75 368.8H170.25C171.619 368.8 172.786 369.283 173.752 370.248C174.717 371.214 175.2 372.381 175.2 373.75V378.25Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -2397,7 +2398,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_232"
                   d="M208 384H224V368H208C208.104 368.104 208.234 368.255 208.391 368.453C208.547 368.651 208.823 369.052 209.219 369.656C209.615 370.26 209.969 370.865 210.281 371.469C210.594 372.073 210.875 372.792 211.125 373.625C211.375 374.459 211.5 375.25 211.5 376C211.5 376.75 211.38 377.537 211.141 378.359C210.901 379.182 210.609 379.916 210.266 380.563C209.922 381.209 209.578 381.797 209.234 382.328C208.891 382.86 208.604 383.271 208.375 383.563L208 384Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -2408,7 +2409,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_233"
                   d="M240 373.5C240 371.979 239.463 370.682 238.391 369.609C237.318 368.537 236.021 368 234.5 368H224V384H240V373.5Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -2419,7 +2420,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_234"
                   d="M256 368V384H272V368C271.896 368.104 271.745 368.234 271.547 368.391C271.349 368.547 270.948 368.823 270.344 369.219C269.74 369.615 269.135 369.969 268.531 370.281C267.927 370.594 267.208 370.875 266.375 371.125C265.541 371.375 264.75 371.5 264 371.5C263.25 371.5 262.464 371.38 261.641 371.141C260.818 370.901 260.083 370.609 259.437 370.266C258.792 369.922 258.203 369.578 257.672 369.234C257.14 368.891 256.729 368.604 256.437 368.375L256 368Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -2430,7 +2431,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_235"
                   d="M335.2 378.25C335.2 379.619 334.717 380.786 333.752 381.752C332.786 382.717 331.619 383.2 330.25 383.2H325.75C324.381 383.2 323.214 382.717 322.249 381.752C321.283 380.786 320.8 379.619 320.8 378.25V373.75C320.8 372.381 321.283 371.214 322.248 370.249C323.214 369.283 324.381 368.8 325.75 368.8H330.25C331.619 368.8 332.786 369.283 333.752 370.248C334.717 371.214 335.2 372.381 335.2 373.75V378.25Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -2441,7 +2442,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_236"
                   d="M352 368V384H368V368C367.896 368.104 367.745 368.234 367.547 368.391C367.349 368.547 366.948 368.823 366.344 369.219C365.74 369.615 365.135 369.969 364.531 370.281C363.927 370.594 363.208 370.875 362.375 371.125C361.541 371.375 360.75 371.5 360 371.5C359.25 371.5 358.464 371.38 357.641 371.141C356.818 370.901 356.083 370.609 355.437 370.266C354.792 369.922 354.203 369.578 353.672 369.234C353.14 368.891 352.729 368.604 352.437 368.375L352 368Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -2452,7 +2453,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_237"
                   d="M431.2 378.25C431.2 379.619 430.717 380.786 429.752 381.752C428.786 382.717 427.619 383.2 426.25 383.2H421.75C420.381 383.2 419.214 382.717 418.249 381.752C417.283 380.786 416.8 379.619 416.8 378.25V373.75C416.8 372.381 417.283 371.214 418.248 370.249C419.214 369.283 420.381 368.8 421.75 368.8H426.25C427.619 368.8 428.786 369.283 429.752 370.248C430.717 371.214 431.2 372.381 431.2 373.75V378.25Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -2462,7 +2463,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_238"
                 d="M480 368H464V384H480V368Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -2472,7 +2473,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_239"
                   d="M512 368V384H528V368C527.896 368.104 527.745 368.234 527.547 368.391C527.349 368.547 526.948 368.823 526.344 369.219C525.74 369.615 525.135 369.969 524.531 370.281C523.927 370.594 523.208 370.875 522.375 371.125C521.541 371.375 520.75 371.5 520 371.5C519.25 371.5 518.464 371.38 517.641 371.141C516.818 370.901 516.083 370.609 515.437 370.266C514.792 369.922 514.203 369.578 513.672 369.234C513.14 368.891 512.729 368.604 512.437 368.375L512 368Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -2483,7 +2484,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_240"
                   d="M560 384V368H544V384C544.104 383.896 544.255 383.766 544.453 383.609C544.651 383.453 545.052 383.177 545.656 382.781C546.26 382.385 546.865 382.031 547.469 381.719C548.073 381.406 548.792 381.125 549.625 380.875C550.459 380.625 551.25 380.5 552 380.5C552.75 380.5 553.537 380.62 554.359 380.859C555.182 381.099 555.916 381.391 556.563 381.734C557.209 382.078 557.797 382.422 558.328 382.766C558.859 383.109 559.271 383.396 559.563 383.625C559.854 383.854 560 383.979 560 384Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -2493,7 +2494,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_241"
                 d="M48 384H32V400H48V384Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -2503,7 +2504,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_242"
                   d="M96 384H80V394.5C80 396.021 80.5365 397.318 81.6094 398.391C82.6824 399.463 83.9792 400 85.5 400H96V384Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -2513,7 +2514,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_243"
                 d="M112 384H96V400H112V384Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -2522,7 +2523,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_244"
                 d="M128 384H112V400H128V384Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -2531,7 +2532,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_245"
                 d="M144 384H128V400H144V384Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -2541,7 +2542,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_246"
                   d="M160 384H144V400H160C159.896 399.896 159.766 399.745 159.609 399.547C159.453 399.349 159.177 398.948 158.781 398.344C158.385 397.74 158.031 397.135 157.719 396.531C157.406 395.927 157.125 395.208 156.875 394.375C156.625 393.541 156.5 392.75 156.5 392C156.5 391.25 156.62 390.464 156.859 389.641C157.099 388.818 157.391 388.083 157.734 387.437C158.078 386.792 158.422 386.203 158.766 385.672C159.109 385.141 159.396 384.729 159.625 384.437L160 384Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -2552,7 +2553,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_247"
                   d="M191.2 394.25C191.2 395.619 190.717 396.786 189.752 397.752C188.786 398.717 187.619 399.2 186.25 399.2H181.75C180.381 399.2 179.214 398.717 178.249 397.752C177.283 396.786 176.8 395.619 176.8 394.25V389.75C176.8 388.381 177.283 387.214 178.248 386.249C179.214 385.283 180.381 384.8 181.75 384.8H186.25C187.619 384.8 188.786 385.283 189.752 386.248C190.717 387.214 191.2 388.381 191.2 389.75V394.25Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -2563,7 +2564,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_248"
                   d="M240 400V384H224V400C224.104 399.896 224.255 399.766 224.453 399.609C224.651 399.453 225.052 399.177 225.656 398.781C226.26 398.385 226.865 398.031 227.469 397.719C228.073 397.406 228.792 397.125 229.625 396.875C230.459 396.625 231.25 396.5 232 396.5C232.75 396.5 233.537 396.62 234.359 396.859C235.182 397.099 235.916 397.391 236.563 397.734C237.209 398.078 237.797 398.422 238.328 398.766C238.859 399.109 239.271 399.396 239.563 399.625C239.854 399.854 240 399.979 240 400Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -2573,7 +2574,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_249"
                 d="M272 384H256V400H272V384Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -2583,7 +2584,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_250"
                   d="M303.2 394.25C303.2 395.619 302.717 396.786 301.752 397.752C300.786 398.717 299.619 399.2 298.25 399.2H293.75C292.381 399.2 291.214 398.717 290.249 397.752C289.283 396.786 288.8 395.619 288.8 394.25V389.75C288.8 388.381 289.283 387.214 290.248 386.249C291.214 385.283 292.381 384.8 293.75 384.8H298.25C299.619 384.8 300.786 385.283 301.752 386.248C302.717 387.214 303.2 388.381 303.2 389.75V394.25Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -2593,7 +2594,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_251"
                 d="M368 384H352V400H368V384Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -2602,7 +2603,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_252"
                 d="M384 384H368V400H384V384Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -2612,7 +2613,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_253"
                   d="M400 389.5C400 387.979 399.463 386.682 398.391 385.609C397.318 384.537 396.021 384 394.5 384H384V400H400V389.5Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -2622,7 +2623,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_254"
                 d="M480 384H464V400H480V384Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -2631,7 +2632,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_255"
                 d="M528 384H512V400H528V384Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -2640,7 +2641,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_256"
                 d="M48 400H32V416H48V400Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -2650,7 +2651,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_257"
                   d="M79.2 410.25C79.2 411.619 78.7169 412.786 77.7515 413.752C76.7861 414.717 75.6189 415.2 74.2499 415.2H69.7501C68.3814 415.2 67.2141 414.717 66.2486 413.752C65.2832 412.786 64.8 411.619 64.8 410.25V405.75C64.8 404.381 65.2829 403.214 66.2485 402.249C67.2141 401.283 68.3813 400.8 69.7501 400.8H74.2501C75.619 400.8 76.7862 401.283 77.7517 402.248C78.7171 403.214 79.2 404.381 79.2 405.75V410.25Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -2660,7 +2661,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_258"
                 d="M128 400H112V416H128V400Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -2670,7 +2671,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_259"
                   d="M207.2 410.25C207.2 411.619 206.717 412.786 205.752 413.752C204.786 414.717 203.619 415.2 202.25 415.2H197.75C196.381 415.2 195.214 414.717 194.249 413.752C193.283 412.786 192.8 411.619 192.8 410.25V405.75C192.8 404.381 193.283 403.214 194.248 402.249C195.214 401.283 196.381 400.8 197.75 400.8H202.25C203.619 400.8 204.786 401.283 205.752 402.248C206.717 403.214 207.2 404.381 207.2 405.75V410.25Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -2680,7 +2681,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_260"
                 d="M272 400H256V416H272V400Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -2690,7 +2691,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_261"
                   d="M336 405.5V400H325.5C323.979 400 322.682 400.536 321.609 401.609C320.537 402.682 320 403.979 320 405.5V416H336V405.5Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -2700,7 +2701,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_262"
                 d="M352 400H336V416H352V400Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -2709,7 +2710,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_263"
                 d="M368 400H352V416H368V400Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -2718,7 +2719,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_264"
                 d="M384 400H368V416H384V400Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -2728,7 +2729,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_265"
                   d="M400 400H384V416H394.5C396.021 416 397.318 415.463 398.391 414.391C399.463 413.318 400 412.021 400 410.5V400Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -2739,7 +2740,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_266"
                   d="M416 400V416H432V400C431.896 400.104 431.745 400.234 431.547 400.391C431.349 400.547 430.948 400.823 430.344 401.219C429.74 401.615 429.135 401.969 428.531 402.281C427.927 402.594 427.208 402.875 426.375 403.125C425.541 403.375 424.75 403.5 424 403.5C423.25 403.5 422.464 403.38 421.641 403.141C420.818 402.901 420.083 402.609 419.437 402.266C418.792 401.922 418.203 401.578 417.672 401.234C417.14 400.891 416.729 400.604 416.437 400.375L416 400Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -2749,7 +2750,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_267"
                 d="M480 400H464V416H480V400Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -2759,7 +2760,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_268"
                   d="M512 405.5V400H501.5C499.979 400 498.682 400.536 497.609 401.609C496.537 402.682 496 403.979 496 405.5V416H512V405.5Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -2770,7 +2771,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_269"
                   d="M528 400H512V416H522.5C524.021 416 525.318 415.463 526.391 414.391C527.463 413.318 528 412.021 528 410.5V400Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -2781,7 +2782,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_270"
                   d="M544 400V416H560V400C559.896 400.104 559.745 400.234 559.547 400.391C559.349 400.547 558.948 400.823 558.344 401.219C557.74 401.615 557.135 401.969 556.531 402.281C555.927 402.594 555.208 402.875 554.375 403.125C553.541 403.375 552.75 403.5 552 403.5C551.25 403.5 550.464 403.38 549.641 403.141C548.818 402.901 548.083 402.609 547.437 402.266C546.792 401.922 546.203 401.578 545.672 401.234C545.14 400.891 544.729 400.604 544.437 400.375L544 400Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -2792,7 +2793,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_271"
                   d="M48 432V416H32V432C32.1042 431.896 32.2552 431.766 32.4531 431.609C32.651 431.453 33.0522 431.177 33.6563 430.781C34.2605 430.385 34.8646 430.031 35.4688 429.719C36.073 429.406 36.7917 429.125 37.6251 428.875C38.4586 428.625 39.2499 428.5 40 428.5C40.7501 428.5 41.5366 428.62 42.3594 428.859C43.1821 429.099 43.9165 429.391 44.5626 429.734C45.2086 430.078 45.797 430.422 46.3282 430.766C46.8594 431.109 47.271 431.396 47.5626 431.625C47.8541 431.854 48 431.979 48 432Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -2803,7 +2804,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_272"
                   d="M80 432H96V416H80C80.1042 416.104 80.2344 416.255 80.3906 416.453C80.5467 416.651 80.8229 417.052 81.2187 417.656C81.6146 418.26 81.9688 418.865 82.2813 419.469C82.5938 420.073 82.875 420.792 83.125 421.625C83.3749 422.459 83.5 423.25 83.5 424C83.5 424.75 83.3802 425.537 83.1406 426.359C82.9011 427.182 82.6094 427.916 82.2656 428.563C81.9218 429.209 81.5781 429.797 81.2344 430.328C80.8907 430.86 80.6042 431.271 80.375 431.563L80 432Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -2813,7 +2814,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_273"
                 d="M112 416H96V432H112V416Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -2822,7 +2823,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_274"
                 d="M128 416H112V432H128V416Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -2831,7 +2832,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_275"
                 d="M144 416H128V432H144V416Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -2840,7 +2841,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_276"
                 d="M160 416H144V432H160V416Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -2850,7 +2851,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_277"
                   d="M176 421.5C176 419.979 175.463 418.682 174.391 417.609C173.318 416.537 172.021 416 170.5 416H160V432H176V421.5Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -2861,7 +2862,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_278"
                   d="M239.2 426.25C239.2 427.619 238.717 428.786 237.752 429.752C236.786 430.717 235.619 431.2 234.25 431.2H229.75C228.381 431.2 227.214 430.717 226.249 429.752C225.283 428.786 224.8 427.619 224.8 426.25V421.75C224.8 420.381 225.283 419.214 226.248 418.249C227.214 417.283 228.381 416.8 229.75 416.8H234.25C235.619 416.8 236.786 417.283 237.752 418.248C238.717 419.214 239.2 420.381 239.2 421.75V426.25Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -2871,7 +2872,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_279"
                 d="M272 416H256V432H272V416Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -2880,7 +2881,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_280"
                 d="M288 416H272V432H288V416Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -2890,7 +2891,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_281"
                   d="M304 416H288V432H304C303.896 431.896 303.766 431.745 303.609 431.547C303.453 431.349 303.177 430.948 302.781 430.344C302.385 429.74 302.031 429.135 301.719 428.531C301.406 427.927 301.125 427.208 300.875 426.375C300.625 425.541 300.5 424.75 300.5 424C300.5 423.25 300.62 422.464 300.859 421.641C301.099 420.818 301.391 420.083 301.734 419.437C302.078 418.792 302.422 418.203 302.766 417.672C303.109 417.141 303.396 416.729 303.625 416.437L304 416Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -2901,7 +2902,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_282"
                   d="M336 432V416H320V432C320.104 431.896 320.255 431.766 320.453 431.609C320.651 431.453 321.052 431.177 321.656 430.781C322.26 430.385 322.865 430.031 323.469 429.719C324.073 429.406 324.792 429.125 325.625 428.875C326.459 428.625 327.25 428.5 328 428.5C328.75 428.5 329.537 428.62 330.359 428.859C331.182 429.099 331.916 429.391 332.563 429.734C333.209 430.078 333.797 430.422 334.328 430.766C334.859 431.109 335.271 431.396 335.563 431.625C335.854 431.854 336 431.979 336 432Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -2912,7 +2913,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_283"
                   d="M384 432V416H368V432C368.104 431.896 368.255 431.766 368.453 431.609C368.651 431.453 369.052 431.177 369.656 430.781C370.26 430.385 370.865 430.031 371.469 429.719C372.073 429.406 372.792 429.125 373.625 428.875C374.459 428.625 375.25 428.5 376 428.5C376.75 428.5 377.537 428.62 378.359 428.859C379.182 429.099 379.916 429.391 380.563 429.734C381.209 430.078 381.797 430.422 382.328 430.766C382.859 431.109 383.271 431.396 383.563 431.625C383.854 431.854 384 431.979 384 432Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -2922,7 +2923,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_284"
                 d="M432 416H416V432H432V416Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -2931,7 +2932,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_285"
                 d="M448 416H432V432H448V416Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -2940,7 +2941,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_286"
                 d="M464 416H448V432H464V416Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -2949,7 +2950,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_287"
                 d="M480 416H464V432H480V416Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -2958,7 +2959,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_288"
                 d="M496 416H480V432H496V416Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -2968,7 +2969,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_289"
                   d="M512 416H496V432H506.5C508.021 432 509.318 431.463 510.391 430.391C511.463 429.318 512 428.021 512 426.5V416Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -2979,7 +2980,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_290"
                   d="M528 432H544V416H528C528.104 416.104 528.234 416.255 528.391 416.453C528.547 416.651 528.823 417.052 529.219 417.656C529.615 418.26 529.969 418.865 530.281 419.469C530.594 420.073 530.875 420.792 531.125 421.625C531.375 422.459 531.5 423.25 531.5 424C531.5 424.75 531.38 425.537 531.141 426.359C530.901 427.182 530.609 427.916 530.266 428.563C529.922 429.209 529.578 429.797 529.234 430.328C528.891 430.86 528.604 431.271 528.375 431.563L528 432Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -2989,7 +2990,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_291"
                 d="M560 416H544V432H560V416Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -2999,7 +3000,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_292"
                   d="M176 432H160V442.5C160 444.021 160.536 445.318 161.609 446.391C162.682 447.463 163.979 448 165.5 448H176V432Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -3009,7 +3010,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_293"
                 d="M192 432H176V448H192V432Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -3018,7 +3019,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_294"
                 d="M208 432H192V448H208V432Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -3028,7 +3029,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_295"
                   d="M224 432H208V448H224C223.896 447.896 223.766 447.745 223.609 447.547C223.453 447.349 223.177 446.948 222.781 446.344C222.385 445.74 222.031 445.135 221.719 444.531C221.406 443.927 221.125 443.208 220.875 442.375C220.625 441.541 220.5 440.75 220.5 440C220.5 439.25 220.62 438.464 220.859 437.641C221.099 436.818 221.391 436.083 221.734 435.437C222.078 434.792 222.422 434.203 222.766 433.672C223.109 433.141 223.396 432.729 223.625 432.437L224 432Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -3038,7 +3039,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_296"
                 d="M272 432H256V448H272V432Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -3047,7 +3048,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_297"
                 d="M432 432H416V448H432V432Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -3056,7 +3057,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_298"
                 d="M496 432H480V448H496V432Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -3066,7 +3067,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_299"
                   d="M560 448V432H544V448C544.104 447.896 544.255 447.766 544.453 447.609C544.651 447.453 545.052 447.177 545.656 446.781C546.26 446.385 546.865 446.031 547.469 445.719C548.073 445.406 548.792 445.125 549.625 444.875C550.459 444.625 551.25 444.5 552 444.5C552.75 444.5 553.537 444.62 554.359 444.859C555.182 445.099 555.916 445.391 556.563 445.734C557.209 446.078 557.797 446.422 558.328 446.766C558.859 447.109 559.271 447.396 559.563 447.625C559.854 447.854 560 447.979 560 448Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -3077,7 +3078,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_300"
                   d="M256 453.5V448H245.5C243.979 448 242.682 448.536 241.609 449.609C240.537 450.682 240 451.979 240 453.5V464H256V453.5Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -3088,7 +3089,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_301"
                   d="M272 448H256V464H266.5C268.021 464 269.318 463.463 270.391 462.391C271.463 461.318 272 460.021 272 458.5V448Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -3099,7 +3100,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_302"
                   d="M303.2 458.25C303.2 459.619 302.717 460.786 301.752 461.752C300.786 462.717 299.619 463.2 298.25 463.2H293.75C292.381 463.2 291.214 462.717 290.249 461.752C289.283 460.786 288.8 459.619 288.8 458.25V453.75C288.8 452.381 289.283 451.214 290.248 450.249C291.214 449.283 292.381 448.8 293.75 448.8H298.25C299.619 448.8 300.786 449.283 301.752 450.248C302.717 451.214 303.2 452.381 303.2 453.75V458.25Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -3110,7 +3111,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_303"
                   d="M320 464H336V448H320C320.104 448.104 320.234 448.255 320.391 448.453C320.547 448.651 320.823 449.052 321.219 449.656C321.615 450.26 321.969 450.865 322.281 451.469C322.594 452.073 322.875 452.792 323.125 453.625C323.375 454.459 323.5 455.25 323.5 456C323.5 456.75 323.38 457.537 323.141 458.359C322.901 459.182 322.609 459.916 322.266 460.563C321.922 461.209 321.578 461.797 321.234 462.328C320.891 462.86 320.604 463.271 320.375 463.563L320 464Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -3120,7 +3121,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_304"
                 d="M352 448H336V464H352V448Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -3130,7 +3131,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_305"
                   d="M368 448H352V464H368C367.896 463.896 367.766 463.745 367.609 463.547C367.453 463.349 367.177 462.948 366.781 462.344C366.385 461.74 366.031 461.135 365.719 460.531C365.406 459.927 365.125 459.208 364.875 458.375C364.625 457.541 364.5 456.75 364.5 456C364.5 455.25 364.62 454.464 364.859 453.641C365.099 452.818 365.391 452.083 365.734 451.437C366.078 450.792 366.422 450.203 366.766 449.672C367.109 449.141 367.396 448.729 367.625 448.437L368 448Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -3141,7 +3142,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_306"
                   d="M384 464H400V448H384C384.104 448.104 384.234 448.255 384.391 448.453C384.547 448.651 384.823 449.052 385.219 449.656C385.615 450.26 385.969 450.865 386.281 451.469C386.594 452.073 386.875 452.792 387.125 453.625C387.375 454.459 387.5 455.25 387.5 456C387.5 456.75 387.38 457.537 387.141 458.359C386.901 459.182 386.609 459.916 386.266 460.563C385.922 461.209 385.578 461.797 385.234 462.328C384.891 462.86 384.604 463.271 384.375 463.563L384 464Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -3151,7 +3152,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_307"
                 d="M416 448H400V464H416V448Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -3160,7 +3161,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_308"
                 d="M432 448H416V464H432V448Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -3170,7 +3171,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_309"
                   d="M463.2 458.25C463.2 459.619 462.717 460.786 461.752 461.752C460.786 462.717 459.619 463.2 458.25 463.2H453.75C452.381 463.2 451.214 462.717 450.249 461.752C449.283 460.786 448.8 459.619 448.8 458.25V453.75C448.8 452.381 449.283 451.214 450.248 450.249C451.214 449.283 452.381 448.8 453.75 448.8H458.25C459.619 448.8 460.786 449.283 461.752 450.248C462.717 451.214 463.2 452.381 463.2 453.75V458.25Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -3180,7 +3181,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_310"
                 d="M496 448H480V464H496V448Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -3190,7 +3191,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_311"
                   d="M512 448H496V464H512C511.896 463.896 511.766 463.745 511.609 463.547C511.453 463.349 511.177 462.948 510.781 462.344C510.385 461.74 510.031 461.135 509.719 460.531C509.406 459.927 509.125 459.208 508.875 458.375C508.625 457.541 508.5 456.75 508.5 456C508.5 455.25 508.62 454.464 508.859 453.641C509.099 452.818 509.391 452.083 509.734 451.437C510.078 450.792 510.422 450.203 510.766 449.672C511.109 449.141 511.396 448.729 511.625 448.437L512 448Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -3201,7 +3202,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_312"
                   d="M528 448V464H544V448C543.896 448.104 543.745 448.234 543.547 448.391C543.349 448.547 542.948 448.823 542.344 449.219C541.74 449.615 541.135 449.969 540.531 450.281C539.927 450.594 539.208 450.875 538.375 451.125C537.541 451.375 536.75 451.5 536 451.5C535.25 451.5 534.464 451.38 533.641 451.141C532.818 450.901 532.083 450.609 531.437 450.266C530.792 449.922 530.203 449.578 529.672 449.234C529.14 448.891 528.729 448.604 528.437 448.375L528 448Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -3212,7 +3213,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_313"
                   d="M192 469.5V464H181.5C179.979 464 178.682 464.536 177.609 465.609C176.537 466.682 176 467.979 176 469.5V480H192V469.5Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -3222,7 +3223,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_314"
                 d="M208 464H192V480H208V464Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -3232,7 +3233,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_315"
                   d="M224 464H208V480H224C223.896 479.896 223.766 479.745 223.609 479.547C223.453 479.349 223.177 478.948 222.781 478.344C222.385 477.74 222.031 477.135 221.719 476.531C221.406 475.927 221.125 475.208 220.875 474.375C220.625 473.541 220.5 472.75 220.5 472C220.5 471.25 220.62 470.464 220.859 469.641C221.099 468.818 221.391 468.083 221.734 467.437C222.078 466.792 222.422 466.203 222.766 465.672C223.109 465.141 223.396 464.729 223.625 464.437L224 464Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -3242,7 +3243,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_316"
                 d="M256 464H240V480H256V464Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -3252,7 +3253,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_317"
                   d="M416 464H400V474.5C400 476.021 400.536 477.318 401.609 478.391C402.682 479.463 403.979 480 405.5 480H416V464Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -3262,7 +3263,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_318"
                 d="M432 464H416V480H432V464Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -3271,7 +3272,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_319"
                 d="M496 464H480V480H496V464Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -3281,7 +3282,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_320"
                   d="M512 480H528V464H512C512.104 464.104 512.234 464.255 512.391 464.453C512.547 464.651 512.823 465.052 513.219 465.656C513.615 466.26 513.969 466.865 514.281 467.469C514.594 468.073 514.875 468.792 515.125 469.625C515.375 470.459 515.5 471.25 515.5 472C515.5 472.75 515.38 473.537 515.141 474.359C514.901 475.182 514.609 475.916 514.266 476.563C513.922 477.209 513.578 477.797 513.234 478.328C512.891 478.86 512.604 479.271 512.375 479.563L512 480Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -3291,7 +3292,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_321"
                 d="M544 464H528V480H544V464Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -3301,7 +3302,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_322"
                   d="M560 469.5C560 467.979 559.463 466.682 558.391 465.609C557.318 464.537 556.021 464 554.5 464H544V480H560V469.5Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -3312,7 +3313,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_323"
                   d="M176 485.5V480H165.5C163.979 480 162.682 480.536 161.609 481.609C160.537 482.682 160 483.979 160 485.5V496H176V485.5Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -3322,7 +3323,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_324"
                 d="M192 480H176V496H192V480Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -3332,7 +3333,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_325"
                   d="M208 480H192V496H202.5C204.021 496 205.318 495.463 206.391 494.391C207.463 493.318 208 492.021 208 490.5V480Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -3343,7 +3344,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_326"
                   d="M224 496H240V480H224C224.104 480.104 224.234 480.255 224.391 480.453C224.547 480.651 224.823 481.052 225.219 481.656C225.615 482.26 225.969 482.865 226.281 483.469C226.594 484.073 226.875 484.792 227.125 485.625C227.375 486.459 227.5 487.25 227.5 488C227.5 488.75 227.38 489.537 227.141 490.359C226.901 491.182 226.609 491.916 226.266 492.563C225.922 493.209 225.578 493.797 225.234 494.328C224.891 494.86 224.604 495.271 224.375 495.563L224 496Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -3353,7 +3354,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_327"
                 d="M256 480H240V496H256V480Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -3363,7 +3364,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_328"
                   d="M272 480H256V496H272C271.896 495.896 271.766 495.745 271.609 495.547C271.453 495.349 271.177 494.948 270.781 494.344C270.385 493.74 270.031 493.135 269.719 492.531C269.406 491.927 269.125 491.208 268.875 490.375C268.625 489.541 268.5 488.75 268.5 488C268.5 487.25 268.62 486.464 268.859 485.641C269.099 484.818 269.391 484.083 269.734 483.437C270.078 482.792 270.422 482.203 270.766 481.672C271.109 481.141 271.396 480.729 271.625 480.437L272 480Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -3374,7 +3375,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_329"
                   d="M303.2 490.25C303.2 491.619 302.717 492.786 301.752 493.752C300.786 494.717 299.619 495.2 298.25 495.2H293.75C292.381 495.2 291.214 494.717 290.249 493.752C289.283 492.786 288.8 491.619 288.8 490.25V485.75C288.8 484.381 289.283 483.214 290.248 482.249C291.214 481.283 292.381 480.8 293.75 480.8H298.25C299.619 480.8 300.786 481.283 301.752 482.248C302.717 483.214 303.2 484.381 303.2 485.75V490.25Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -3385,7 +3386,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_330"
                   d="M352 496H368V480H352C352.104 480.104 352.234 480.255 352.391 480.453C352.547 480.651 352.823 481.052 353.219 481.656C353.615 482.26 353.969 482.865 354.281 483.469C354.594 484.073 354.875 484.792 355.125 485.625C355.375 486.459 355.5 487.25 355.5 488C355.5 488.75 355.38 489.537 355.141 490.359C354.901 491.182 354.609 491.916 354.266 492.563C353.922 493.209 353.578 493.797 353.234 494.328C352.891 494.86 352.604 495.271 352.375 495.563L352 496Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -3395,7 +3396,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_331"
                 d="M384 480H368V496H384V480Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -3405,7 +3406,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_332"
                   d="M400 480H384V496H400C399.896 495.896 399.766 495.745 399.609 495.547C399.453 495.349 399.177 494.948 398.781 494.344C398.385 493.74 398.031 493.135 397.719 492.531C397.406 491.927 397.125 491.208 396.875 490.375C396.625 489.541 396.5 488.75 396.5 488C396.5 487.25 396.62 486.464 396.859 485.641C397.099 484.818 397.391 484.083 397.734 483.437C398.078 482.792 398.422 482.203 398.766 481.672C399.109 481.141 399.396 480.729 399.625 480.437L400 480Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -3416,7 +3417,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_333"
                   d="M432 480H416V490.5C416 492.021 416.536 493.318 417.609 494.391C418.682 495.463 419.979 496 421.5 496H432V480Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -3426,7 +3427,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_334"
                 d="M448 480H432V496H448V480Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -3435,7 +3436,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_335"
                 d="M464 480H448V496H464V480Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -3444,7 +3445,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_336"
                 d="M480 480H464V496H480V480Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -3453,7 +3454,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_337"
                 d="M496 480H480V496H496V480Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -3462,7 +3463,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_338"
                 d="M544 480H528V496H544V480Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -3472,7 +3473,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_339"
                   d="M560 480H544V496H554.5C556.021 496 557.318 495.463 558.391 494.391C559.463 493.318 560 492.021 560 490.5V480Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -3482,7 +3483,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_340"
                 d="M176 496H160V512H176V496Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -3492,7 +3493,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_341"
                   d="M223.2 506.25C223.2 507.619 222.717 508.786 221.752 509.752C220.786 510.717 219.619 511.2 218.25 511.2H213.75C212.381 511.2 211.214 510.717 210.249 509.752C209.283 508.786 208.8 507.619 208.8 506.25V501.75C208.8 500.381 209.283 499.214 210.248 498.249C211.214 497.283 212.381 496.8 213.75 496.8H218.25C219.619 496.8 220.786 497.283 221.752 498.248C222.717 499.214 223.2 500.381 223.2 501.75V506.25Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -3503,7 +3504,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_342"
                   d="M272 496V512H288V496C287.896 496.104 287.745 496.234 287.547 496.391C287.349 496.547 286.948 496.823 286.344 497.219C285.74 497.615 285.135 497.969 284.531 498.281C283.927 498.594 283.208 498.875 282.375 499.125C281.541 499.375 280.75 499.5 280 499.5C279.25 499.5 278.464 499.38 277.641 499.141C276.818 498.901 276.083 498.609 275.437 498.266C274.792 497.922 274.203 497.578 273.672 497.234C273.14 496.891 272.729 496.604 272.437 496.375L272 496Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -3514,7 +3515,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_343"
                   d="M304 496V512H320V496C319.896 496.104 319.745 496.234 319.547 496.391C319.349 496.547 318.948 496.823 318.344 497.219C317.74 497.615 317.135 497.969 316.531 498.281C315.927 498.594 315.208 498.875 314.375 499.125C313.541 499.375 312.75 499.5 312 499.5C311.25 499.5 310.464 499.38 309.641 499.141C308.818 498.901 308.083 498.609 307.437 498.266C306.792 497.922 306.203 497.578 305.672 497.234C305.14 496.891 304.729 496.604 304.437 496.375L304 496Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -3524,7 +3525,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_344"
                 d="M448 496H432V512H448V496Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -3534,7 +3535,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_345"
                   d="M496 496H480V506.5C480 508.021 480.536 509.318 481.609 510.391C482.682 511.463 483.979 512 485.5 512H496V496Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -3545,7 +3546,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_346"
                   d="M512 496H496V512H512C511.896 511.896 511.766 511.745 511.609 511.547C511.453 511.349 511.177 510.948 510.781 510.344C510.385 509.74 510.031 509.135 509.719 508.531C509.406 507.927 509.125 507.208 508.875 506.375C508.625 505.541 508.5 504.75 508.5 504C508.5 503.25 508.62 502.464 508.859 501.641C509.099 500.818 509.391 500.083 509.734 499.437C510.078 498.792 510.422 498.203 510.766 497.672C511.109 497.141 511.396 496.729 511.625 496.437L512 496Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -3556,7 +3557,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_347"
                   d="M544 512V496H528V512C528.104 511.896 528.255 511.766 528.453 511.609C528.651 511.453 529.052 511.177 529.656 510.781C530.26 510.385 530.865 510.031 531.469 509.719C532.073 509.406 532.792 509.125 533.625 508.875C534.459 508.625 535.25 508.5 536 508.5C536.75 508.5 537.537 508.62 538.359 508.859C539.182 509.099 539.916 509.391 540.563 509.734C541.209 510.078 541.797 510.422 542.328 510.766C542.859 511.109 543.271 511.396 543.563 511.625C543.854 511.854 544 511.979 544 512Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -3567,7 +3568,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_348"
                   d="M176 512H160V522.5C160 524.021 160.536 525.318 161.609 526.391C162.682 527.463 163.979 528 165.5 528H176V512Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -3578,7 +3579,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_349"
                   d="M192 512H176V528H192C191.896 527.896 191.766 527.745 191.609 527.547C191.453 527.349 191.177 526.948 190.781 526.344C190.385 525.74 190.031 525.135 189.719 524.531C189.406 523.927 189.125 523.208 188.875 522.375C188.625 521.541 188.5 520.75 188.5 520C188.5 519.25 188.62 518.464 188.859 517.641C189.099 516.818 189.391 516.083 189.734 515.437C190.078 514.792 190.422 514.203 190.766 513.672C191.109 513.141 191.396 512.729 191.625 512.437L192 512Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -3589,7 +3590,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_350"
                   d="M272 517.5V512H261.5C259.979 512 258.682 512.536 257.609 513.609C256.537 514.682 256 515.979 256 517.5V528H272V517.5Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -3599,7 +3600,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_351"
                 d="M288 512H272V528H288V512Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -3608,7 +3609,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_352"
                 d="M304 512H288V528H304V512Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -3618,7 +3619,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_353"
                   d="M320 512H304V528H314.5C316.021 528 317.318 527.463 318.391 526.391C319.463 525.318 320 524.021 320 522.5V512Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -3629,7 +3630,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_354"
                   d="M368 517.5V512H357.5C355.979 512 354.682 512.536 353.609 513.609C352.537 514.682 352 515.979 352 517.5V528H368V517.5Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -3639,7 +3640,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_355"
                 d="M384 512H368V528H384V512Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -3648,7 +3649,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_356"
                 d="M400 512H384V528H400V512Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -3658,7 +3659,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_357"
                   d="M416 512H400V528H416C415.896 527.896 415.766 527.745 415.609 527.547C415.453 527.349 415.177 526.948 414.781 526.344C414.385 525.74 414.031 525.135 413.719 524.531C413.406 523.927 413.125 523.208 412.875 522.375C412.625 521.541 412.5 520.75 412.5 520C412.5 519.25 412.62 518.464 412.859 517.641C413.099 516.818 413.391 516.083 413.734 515.437C414.078 514.792 414.422 514.203 414.766 513.672C415.109 513.141 415.396 512.729 415.625 512.437L416 512Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -3668,7 +3669,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_358"
                 d="M448 512H432V528H448V512Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -3678,7 +3679,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_359"
                   d="M464 517.5C464 515.979 463.463 514.682 462.391 513.609C461.318 512.537 460.021 512 458.5 512H448V528H464V517.5Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -3689,7 +3690,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_360"
                   d="M240 544H256V528H240C240.104 528.104 240.234 528.255 240.391 528.453C240.547 528.651 240.823 529.052 241.219 529.656C241.615 530.26 241.969 530.865 242.281 531.469C242.594 532.073 242.875 532.792 243.125 533.625C243.375 534.459 243.5 535.25 243.5 536C243.5 536.75 243.38 537.537 243.141 538.359C242.901 539.182 242.609 539.916 242.266 540.563C241.922 541.209 241.578 541.797 241.234 542.328C240.891 542.86 240.604 543.271 240.375 543.563L240 544Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -3700,7 +3701,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_361"
                   d="M272 528H256V544H266.5C268.021 544 269.318 543.463 270.391 542.391C271.463 541.318 272 540.021 272 538.5V528Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -3710,7 +3711,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_362"
                 d="M368 528H352V544H368V528Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -3719,7 +3720,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_363"
                 d="M384 528H368V544H384V528Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -3729,7 +3730,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_364"
                   d="M448 528H432V538.5C432 540.021 432.536 541.318 433.609 542.391C434.682 543.463 435.979 544 437.5 544H448V528Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -3739,7 +3740,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_365"
                 d="M464 528H448V544H464V528Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -3749,7 +3750,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_366"
                   d="M480 528H464V544H480C479.896 543.896 479.766 543.745 479.609 543.547C479.453 543.349 479.177 542.948 478.781 542.344C478.385 541.74 478.031 541.135 477.719 540.531C477.406 539.927 477.125 539.208 476.875 538.375C476.625 537.541 476.5 536.75 476.5 536C476.5 535.25 476.62 534.464 476.859 533.641C477.099 532.818 477.391 532.083 477.734 531.437C478.078 530.792 478.422 530.203 478.766 529.672C479.109 529.141 479.396 528.729 479.625 528.437L480 528Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -3760,7 +3761,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_367"
                   d="M511.2 538.25C511.2 539.619 510.717 540.786 509.752 541.752C508.786 542.717 507.619 543.2 506.25 543.2H501.75C500.381 543.2 499.214 542.717 498.249 541.752C497.283 540.786 496.8 539.619 496.8 538.25V533.75C496.8 532.381 497.283 531.214 498.248 530.249C499.214 529.283 500.381 528.8 501.75 528.8H506.25C507.619 528.8 508.786 529.283 509.752 530.248C510.717 531.214 511.2 532.381 511.2 533.75V538.25Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -3771,7 +3772,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_368"
                   d="M207.2 554.25C207.2 555.619 206.717 556.786 205.752 557.752C204.786 558.717 203.619 559.2 202.25 559.2H197.75C196.381 559.2 195.214 558.717 194.249 557.752C193.283 556.786 192.8 555.619 192.8 554.25V549.75C192.8 548.381 193.283 547.214 194.248 546.249C195.214 545.283 196.381 544.8 197.75 544.8H202.25C203.619 544.8 204.786 545.283 205.752 546.248C206.717 547.214 207.2 548.381 207.2 549.75V554.25Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -3782,7 +3783,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_369"
                   d="M239.2 554.25C239.2 555.619 238.717 556.786 237.752 557.752C236.786 558.717 235.619 559.2 234.25 559.2H229.75C228.381 559.2 227.214 558.717 226.249 557.752C225.283 556.786 224.8 555.619 224.8 554.25V549.75C224.8 548.381 225.283 547.214 226.248 546.249C227.214 545.283 228.381 544.8 229.75 544.8H234.25C235.619 544.8 236.786 545.283 237.752 546.248C238.717 547.214 239.2 548.381 239.2 549.75V554.25Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -3793,7 +3794,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_370"
                   d="M287.2 554.25C287.2 555.619 286.717 556.786 285.752 557.752C284.786 558.717 283.619 559.2 282.25 559.2H277.75C276.381 559.2 275.214 558.717 274.249 557.752C273.283 556.786 272.8 555.619 272.8 554.25V549.75C272.8 548.381 273.283 547.214 274.248 546.249C275.214 545.283 276.381 544.8 277.75 544.8H282.25C283.619 544.8 284.786 545.283 285.752 546.248C286.717 547.214 287.2 548.381 287.2 549.75V554.25Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -3804,7 +3805,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_371"
                   d="M304 560H320V544H304C304.104 544.104 304.234 544.255 304.391 544.453C304.547 544.651 304.823 545.052 305.219 545.656C305.615 546.26 305.969 546.865 306.281 547.469C306.594 548.073 306.875 548.792 307.125 549.625C307.375 550.459 307.5 551.25 307.5 552C307.5 552.75 307.38 553.537 307.141 554.359C306.901 555.182 306.609 555.916 306.266 556.563C305.922 557.209 305.578 557.797 305.234 558.328C304.891 558.86 304.604 559.271 304.375 559.563L304 560Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -3814,7 +3815,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_372"
                 d="M336 544H320V560H336V544Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -3823,7 +3824,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_373"
                 d="M352 544H336V560H352V544Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -3832,7 +3833,7 @@ const QRCodeDesign = ({ ModeColor }) => {
               <path
                 id="Vector_374"
                 d="M368 544H352V560H368V544Z"
-                fill={`${FillOPtion}`}
+                fill={`${QRtheme.palette.text.primary}`}
               />
             </g>
           </g>
@@ -3842,7 +3843,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_375"
                   d="M384 544H368V560H378.5C380.021 560 381.318 559.463 382.391 558.391C383.463 557.318 384 556.021 384 554.5V544Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -3853,7 +3854,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_376"
                   d="M431.2 554.25C431.2 555.619 430.717 556.786 429.752 557.752C428.786 558.717 427.619 559.2 426.25 559.2H421.75C420.381 559.2 419.214 558.717 418.249 557.752C417.283 556.786 416.8 555.619 416.8 554.25V549.75C416.8 548.381 417.283 547.214 418.248 546.249C419.214 545.283 420.381 544.8 421.75 544.8H426.25C427.619 544.8 428.786 545.283 429.752 546.248C430.717 547.214 431.2 548.381 431.2 549.75V554.25Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -3864,7 +3865,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_377"
                   d="M512 560H528V544H512C512.104 544.104 512.234 544.255 512.391 544.453C512.547 544.651 512.823 545.052 513.219 545.656C513.615 546.26 513.969 546.865 514.281 547.469C514.594 548.073 514.875 548.792 515.125 549.625C515.375 550.459 515.5 551.25 515.5 552C515.5 552.75 515.38 553.537 515.141 554.359C514.901 555.182 514.609 555.916 514.266 556.563C513.922 557.209 513.578 557.797 513.234 558.328C512.891 558.86 512.604 559.271 512.375 559.563L512 560Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -3875,7 +3876,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_378"
                   d="M544 544H528V560H544C543.896 559.896 543.766 559.745 543.609 559.547C543.453 559.349 543.177 558.948 542.781 558.344C542.385 557.74 542.031 557.135 541.719 556.531C541.406 555.927 541.125 555.208 540.875 554.375C540.625 553.541 540.5 552.75 540.5 552C540.5 551.25 540.62 550.464 540.859 549.641C541.099 548.818 541.391 548.083 541.734 547.437C542.078 546.792 542.422 546.203 542.766 545.672C543.109 545.141 543.396 544.729 543.625 544.437L544 544Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -3886,7 +3887,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_379"
                   d="M106.2 144H69.8336C48.9792 144 32.0224 126.842 32.0224 105.763L32 32H106.2C127.043 32 144 49.1584 144 70.2368V105.763V144H106.2ZM127.2 70.2368C127.2 58.4163 117.78 48.8 106.2 48.8H48.8045L48.8224 105.758C48.8224 117.584 58.2483 127.2 69.8336 127.2H127.2V70.2368Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -3897,7 +3898,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_380"
                   d="M522.2 32H485.834C464.979 32 448.022 49.1584 448.022 70.2368L448 144H522.2C543.043 144 560 126.842 560 105.763V70.2368V32H522.2ZM543.2 105.763C543.2 117.584 533.78 127.2 522.2 127.2H464.804L464.822 70.2424C464.822 58.4163 474.248 48.8 485.834 48.8H543.2V105.763Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -3908,7 +3909,7 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_381"
                   d="M106.2 448H69.8336C48.9792 448 32.0224 465.158 32.0224 486.237L32 560H106.2C127.043 560 144 542.842 144 521.763V486.237V448H106.2ZM127.2 521.763C127.2 533.584 117.78 543.2 106.2 543.2H48.8045L48.8224 486.242C48.8224 474.416 58.2483 464.8 69.8336 464.8H127.2V521.763Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -3919,17 +3920,17 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_382"
                   d="M111.52 72.0064C111.52 76.1627 108.343 79.5328 104.425 79.5328H71.5749C67.6567 79.5328 64.48 76.1627 64.48 72.0064C64.48 67.8501 67.6567 64.48 71.5749 64.48H104.425C108.343 64.48 111.52 67.8501 111.52 72.0064Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
                 <path
                   id="Vector_383"
                   d="M111.52 103.994C111.52 108.15 108.343 111.52 104.425 111.52H71.5749C67.6567 111.52 64.48 108.15 64.48 103.994C64.48 99.8368 67.6567 96.4672 71.5749 96.4672H104.425C108.343 96.4672 111.52 99.8368 111.52 103.994Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
                 <path
                   id="Vector_384"
                   d="M111.52 88C111.52 92.1568 108.343 95.5264 104.425 95.5264H71.5749C67.6567 95.5264 64.48 92.1568 64.48 88C64.48 83.8427 67.6567 80.4736 71.5749 80.4736H104.425C108.343 80.4736 111.52 83.8427 111.52 88Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -3940,17 +3941,17 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_385"
                   d="M527.52 72.0064C527.52 76.1627 524.343 79.5328 520.425 79.5328H487.575C483.657 79.5328 480.48 76.1627 480.48 72.0064C480.48 67.8501 483.657 64.48 487.575 64.48H520.425C524.343 64.48 527.52 67.8501 527.52 72.0064Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
                 <path
                   id="Vector_386"
                   d="M527.52 103.994C527.52 108.15 524.343 111.52 520.425 111.52H487.575C483.657 111.52 480.48 108.15 480.48 103.994C480.48 99.8368 483.657 96.4672 487.575 96.4672H520.425C524.343 96.4672 527.52 99.8368 527.52 103.994Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
                 <path
                   id="Vector_387"
                   d="M527.52 88C527.52 92.1568 524.343 95.5264 520.425 95.5264H487.575C483.657 95.5264 480.48 92.1568 480.48 88C480.48 83.8427 483.657 80.4736 487.575 80.4736H520.425C524.343 80.4736 527.52 83.8427 527.52 88Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>
@@ -3961,17 +3962,17 @@ const QRCodeDesign = ({ ModeColor }) => {
                 <path
                   id="Vector_388"
                   d="M111.52 488.006C111.52 492.163 108.343 495.533 104.425 495.533H71.5749C67.6567 495.533 64.48 492.163 64.48 488.006C64.48 483.85 67.6567 480.48 71.5749 480.48H104.425C108.343 480.48 111.52 483.85 111.52 488.006Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
                 <path
                   id="Vector_389"
                   d="M111.52 519.994C111.52 524.15 108.343 527.52 104.425 527.52H71.5749C67.6567 527.52 64.48 524.15 64.48 519.994C64.48 515.837 67.6567 512.467 71.5749 512.467H104.425C108.343 512.467 111.52 515.837 111.52 519.994Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
                 <path
                   id="Vector_390"
                   d="M111.52 504C111.52 508.157 108.343 511.526 104.425 511.526H71.5749C67.6567 511.526 64.48 508.157 64.48 504C64.48 499.843 67.6567 496.474 71.5749 496.474H104.425C108.343 496.474 111.52 499.843 111.52 504Z"
-                  fill={`${FillOPtion}`}
+                  fill={`${QRtheme.palette.text.primary}`}
                 />
               </g>
             </g>

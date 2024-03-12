@@ -12,46 +12,7 @@ import Section9 from "./Pages/HomePage/Section9.jsx";
 import Section10 from "./Pages/HomePage/Section10.jsx";
 import Section11 from "./Pages/HomePage/Section11.jsx";
 import Section12 from "./Pages/HomePage/Section12.jsx";
-export const theme = createTheme({
-  palette: {
-    primary: {
-      main: "#29E6FF",
-      dark: "#29E6FF",
-      light: "#00BDD6",
-    },
-
-    secondary: {
-      main: "#421867",
-      dark: "#421867",
-      light: "#C298E7",
-    },
-    Accent: {
-      main: "#9A2390",
-      dark: "#9A2390",
-      light: "#DC65D2",
-    },
-    Gang: {
-      dark: "#EAF8FA",
-      light: "#051315",
-    },
-    BackGroundColor: {
-      main: "#EFFAFB",
-    },
-    GradientColor: {
-      Main1: `Linear-gradient(90deg,#29E6FF,#421867,#9A2390} !important`,
-      main: "Linear-gradient(90deg,#2980B9,#6DD5FA)",
-    },
-    greey: {
-      main: "#9e9e9e",
-      dark: "#9e9e9e",
-      light: "#616161",
-    },
-  },
-});
-
 const Home = () => {
-  const [first, setfirst] = useState("dark");
-
   return (
     <Stack component={"main"}>
       <Section1 />

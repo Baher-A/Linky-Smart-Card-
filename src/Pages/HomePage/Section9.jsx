@@ -1,8 +1,9 @@
-import { Box, Typography } from "@mui/material";
+import { Box, Typography, useTheme } from "@mui/material";
 import React from "react";
 import ImageSlider from "../PersonalPage/ImageSlider";
-import { theme } from "../../Home.jsx";
+
 const Section9 = () => {
+  const theme =  useTheme()
   return (
     <Box
       sx={{
@@ -11,7 +12,7 @@ const Section9 = () => {
         justifyContent: "center",
         alignItems: "center",
         gap: 5,
-        mb: 5,
+        my: { xs: 10, md: 15 }
       }}
     >
       <Box

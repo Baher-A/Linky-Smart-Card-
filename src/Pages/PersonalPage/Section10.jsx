@@ -1,8 +1,11 @@
 import { Box, Container, Grid, Stack, Typography } from "@mui/material";
 import React, { useEffect } from "react";
 import SocialMediaimg from "./SocialMediaimg.jsx";
+import {ShowTextt } from "../ElementDesign/ObserverComp";
+
 const Section10 = () => {
   useEffect(() => {
+    ShowTextt("Section10Text", `rtl`);
     const observer = new IntersectionObserver((entries) => {
       const IconsAnimation = document.querySelectorAll(".SocialMEdiaIcons");
       entries.forEach((entry) => {
@@ -33,7 +36,7 @@ const Section10 = () => {
   }, []);
 
   return (
-    <Stack sx={{ mt: { md: 5, xs: 3 } }}>
+    <Stack sx={{ my: { md: 30, xs: 15 } }}>
       <Container>
         <Grid container>
           <Grid item xs={12} md={6}>
@@ -49,13 +52,14 @@ const Section10 = () => {
                 height: "100%",
               }}
             >
-              <Typography variant="h7">Advanced tools</Typography>
-              <Typography variant="h4" sx={{ fontWeight: "bold" }}>
+              <Typography variant="h7" className="HIdeText Section10Text">Advanced tools</Typography>
+              <Typography variant="h4" sx={{ fontWeight: "bold" }} className="HIdeText Section10Text">
                 Advanced tools
               </Typography>
               <Typography
                 variant="caption"
                 sx={{ color: "grey", maxWidth: "480px" }}
+                className="HIdeText Section10Text"
               >
                 Present your business professionally using unique presentation
                 tools. We help you include external content from the most

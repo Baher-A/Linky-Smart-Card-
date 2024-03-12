@@ -1,27 +1,25 @@
-import { Box, Button, Grid, Typography } from "@mui/material";
+import { Box, Button, Grid, Typography, useTheme } from "@mui/material";
 import React from "react";
 import ConferanceImg from "../../assets/imgAGE.png";
-import { theme } from "../../Home.jsx";
+import SVGSHAPE from "./SVGSHAPE";
+import { DataSection } from "../Products/ProductsInformation";
+import PrimaryButton from "../ElementDesign/PrimaryButton";
+import SecondaryButton from "../ElementDesign/SecondaryButton";
+
 const Section8 = () => {
-  const DataSection = [
-    {
-      number: "30+",
-      Title: "Partners",
-      Caption: "Partners & Co founders",
-    },
-    {
-      number: "240+",
-      Title: "Successful deal",
-      Caption: "Share with our partners",
-    },
-    {
-      number: "3000+",
-      Title: "Online Account",
-      Caption: "Existing clients",
-    },
-  ];
+  const theme = useTheme();
+
   return (
-    <Grid container component={"section"} my={5}>
+    <Grid
+      container
+      component={"section"}
+      sx={{
+        my: { xs: 10, md: 15 },
+        // bgcolor: "rgba(0 ,153 ,255, 0.12)",
+        position: "relative",
+      }}
+    >
+      <SVGSHAPE Option={false} />
       <Grid item xs={12} md={6}>
         <Box
           sx={{
@@ -87,20 +85,22 @@ const Section8 = () => {
               mt: 3,
             }}
           >
-            <Button
-              variant="contained"
-              color="primary"
-              sx={{ fontWeight: "bold", mr: 3 }}
-            >
-              MAKE A DEAL
-            </Button>
-            <Button
-              variant="outlined"
-              color="primary"
-              sx={{ fontWeight: "bold" }}
-            >
-              Contact Us
-            </Button>
+            <PrimaryButton
+              content=" MAKE A DEAL"
+              sx={{
+                bgcolor: `${theme.palette.primary.dark}!important`,
+                mr: 3,
+              }}
+            ></PrimaryButton>
+            <SecondaryButton
+              content="Contact Us"
+              sx={{
+                padding: "8px 12px",
+                fontWeight: "600 !important",
+                fontSize: "90%",
+                outlineColor: `${theme.palette.text.primary}!important`,
+              }}
+            ></SecondaryButton>
           </Box>
         </Box>
       </Grid>
@@ -112,12 +112,13 @@ const Section8 = () => {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
+            mt: { xs: 0, md: "3rem" },
           }}
         >
           <img
             src={ConferanceImg}
             alt="ConferanceImg"
-            style={{ maxWidth: "800px", minWidth: "450px" }}
+            style={{ maxWidth: "680px", minWidth: "450px" }}
           />
         </Box>
       </Grid>

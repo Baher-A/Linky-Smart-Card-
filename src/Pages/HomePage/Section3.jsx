@@ -1,22 +1,39 @@
-import { Box, Grid, Typography } from "@mui/material";
+import { Box, Button, Grid, Typography, useTheme } from "@mui/material";
 import Home1 from "../../assets/Home1.png";
 import { section3 as content } from "../../assets/Projectinfo";
 import React from "react";
-import { theme } from "../../Home.jsx";
+import { useNavigate } from "react-router-dom";
+import PrimaryButton from "../ElementDesign/PrimaryButton";
+
 const fontsizee = {
   title: { xs: "40px", sm: "30px", md: "60px" },
   caption: { xs: "15px", sm: "15px", md: "18px" },
 };
 
 const Section3 = () => {
+  const navigat = useNavigate();
+  const theme = useTheme();
   return (
-    <Box component={"section"} mt={10}>
+    <Box component={"section"} sx={{ my: { xs: 10, md: 15 } }}>
       <Grid container item>
-        <Grid item xs={12} sm={6} md={6}>
-          <img src={Home1} alt="Bold-Black-Card" className="BGimg" />
+        <Grid
+          item
+          xs={12}
+          md={6}
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <img
+            src={Home1}
+            alt="Bold-Black-Card"
+            style={{ objectFit: "cover", maxWidth: "600px" }}
+          />
         </Grid>
 
-        <Grid item xs={12} sm={6} md={6}>
+        <Grid item xs={12} md={6}>
           <Box
             sx={{
               width: "100%",
@@ -41,11 +58,6 @@ const Section3 = () => {
               <u
                 style={{
                   color: `${theme.palette.primary.main}`,
-                  fontSize: {
-                    xs: fontsizee.title.xs,
-                    sm: fontsizee.title.sm,
-                    md: fontsizee.title.md,
-                  },
                   textDecoration: "none",
                 }}
               >
@@ -57,7 +69,7 @@ const Section3 = () => {
               variant="caption"
               sx={{
                 textAlign: "center",
-                color: theme.palette.grey.main,
+                color: theme.palette.text.secondary,
                 display: "block",
                 padding: "1rem",
               }}
@@ -77,15 +89,10 @@ const Section3 = () => {
             >
               <Grid item xs={5}>
                 <Typography
-                  variant="h2"
+                  variant="h4"
                   sx={{
                     textAlign: "center",
                     color: theme.palette.primary.main,
-                    fontSize: {
-                      xs: fontsizee.title.xs,
-                      sm: fontsizee.title.sm,
-                      md: fontsizee.title.md,
-                    },
                   }}
                 >
                   1.
@@ -94,17 +101,13 @@ const Section3 = () => {
                   variant="h6"
                   sx={{
                     textAlign: "center",
-                    fontSize: {
-                      xs: fontsizee.caption.xs,
-                      sm: fontsizee.caption.sm,
-                      md: fontsizee.caption.md,
-                    },
                   }}
                 >
                   {content[1].scratch1.title}
                 </Typography>
                 <Typography
                   variant="caption"
+                  color={theme.palette.text.secondary}
                   sx={{ textAlign: "center", display: "block" }}
                 >
                   {content[1].scratch1.caption}
@@ -112,11 +115,10 @@ const Section3 = () => {
               </Grid>
               <Grid item xs={5}>
                 <Typography
-                  variant="h2"
+                  variant="h4"
                   sx={{
                     textAlign: "center",
                     color: theme.palette.primary.main,
-                    fontSize: { xs: "20px", sm: "30px", md: "60px" },
                   }}
                 >
                   2.
@@ -125,17 +127,13 @@ const Section3 = () => {
                   variant="h6"
                   sx={{
                     textAlign: "center",
-                    fontSize: {
-                      xs: fontsizee.caption.xs,
-                      sm: fontsizee.caption.sm,
-                      md: fontsizee.caption.md,
-                    },
                   }}
                 >
                   {content[1].scratch2.title}
                 </Typography>
                 <Typography
                   variant="caption"
+                  color={theme.palette.text.secondary}
                   sx={{ textAlign: "center", display: "block" }}
                 >
                   {content[1].scratch2.caption}
@@ -143,11 +141,10 @@ const Section3 = () => {
               </Grid>
               <Grid item xs={5}>
                 <Typography
-                  variant="h2"
+                  variant="h4"
                   sx={{
                     textAlign: "center",
                     color: theme.palette.primary.main,
-                    fontSize: { xs: "20px", sm: "30px", md: "60px" },
                   }}
                 >
                   3.
@@ -156,16 +153,12 @@ const Section3 = () => {
                   variant="h6"
                   sx={{
                     textAlign: "center",
-                    fontSize: {
-                      xs: fontsizee.caption.xs,
-                      sm: fontsizee.caption.sm,
-                      md: fontsizee.caption.md,
-                    },
                   }}
                 >
                   {content[1].scratch3.title}
                 </Typography>
                 <Typography
+                  color={theme.palette.text.secondary}
                   variant="caption"
                   sx={{ textAlign: "center", display: "block" }}
                 >
@@ -174,11 +167,10 @@ const Section3 = () => {
               </Grid>
               <Grid item xs={5}>
                 <Typography
-                  variant="h2"
+                  variant="h4"
                   sx={{
                     textAlign: "center",
                     color: theme.palette.primary.main,
-                    fontSize: { xs: "20px", sm: "30px", md: "60px" },
                   }}
                 >
                   4.
@@ -187,16 +179,12 @@ const Section3 = () => {
                   variant="h6"
                   sx={{
                     textAlign: "center",
-                    fontSize: {
-                      xs: fontsizee.caption.xs,
-                      sm: fontsizee.caption.sm,
-                      md: fontsizee.caption.md,
-                    },
                   }}
                 >
                   {content[1].scratch4.title}
                 </Typography>
                 <Typography
+                  color={theme.palette.text.secondary}
                   variant="caption"
                   sx={{ textAlign: "center", display: "block" }}
                 >
@@ -204,6 +192,25 @@ const Section3 = () => {
                 </Typography>
               </Grid>
             </Grid>
+            <PrimaryButton
+              content={"GET YOUR CARD"}
+              onClick={() => {
+                navigat("./products/Bold-Card");
+              }}
+              sx={{
+                mt: 3,
+                alignSelf: "center",
+                bgcolor: theme.palette.primary.dark,
+                paddingX: "2rem",
+                "&:hover": {
+                  boxShadow:
+                    theme.palette.mode == "light"
+                      ? `1px 1px  5px 5px rgba(0,0,0,.3) !important`
+                      : `0px 0px  5px 5px rgba(255,255,255,.3) !important`,
+                  bgcolor: theme.palette.primary.main,
+                },
+              }}
+            ></PrimaryButton>
           </Box>
         </Grid>
       </Grid>

@@ -2,11 +2,13 @@ import { Box, Container, Grid, Paper, Stack, Typography } from "@mui/material";
 import React, { useEffect } from "react";
 import QRCodeDesign from "./QRCodeDesign.jsx";
 import { useTheme } from "@emotion/react";
+import { Xrotate, ShowTextt } from "../ElementDesign/ObserverComp";
 
 const Section7 = () => {
   const ModeColor = useTheme().palette.mode;
-  console.log(ModeColor);
   useEffect(() => {
+    Xrotate(`qrsection`, `FliprightShow`, `FliprightHidden`)
+    ShowTextt('Section7Text', `ltr`);
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -21,7 +23,7 @@ const Section7 = () => {
     observer.observe(document.getElementById("qrCaption"));
   }, []);
   return (
-    <Stack sx={{ mt: { md: 5, xs: 3 } }}>
+    <Stack sx={{ my: { md: 20, xs: 15 } }}>
       <Container>
         <Grid container>
           <Grid item xs={12} md={6}>
@@ -37,12 +39,13 @@ const Section7 = () => {
                 height: "100%",
               }}
             >
-              <Typography variant="h7">Next Qr Generation</Typography>
-              <Typography variant="h4" sx={{ fontWeight: "bold" }}>
+              <Typography  className="HIdeText Section7Text" variant="h7">Next Qr Generation</Typography>
+              <Typography className="HIdeText Section7Text" variant="h4" sx={{ fontWeight: "bold" }}>
                 Full customize Your Qr code
               </Typography>
               <Typography
                 id="qrCaption"
+                className="HIdeText Section7Text"
                 variant="caption"
                 sx={{ color: "grey", maxWidth: "480px" }}
               >
@@ -53,6 +56,7 @@ const Section7 = () => {
           </Grid>
           <Grid item xs={12} md={6}>
             <Box
+              id='qrsection'
               sx={{
                 display: "flex",
                 alignItems: "center",

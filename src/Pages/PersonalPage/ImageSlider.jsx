@@ -8,6 +8,7 @@ import SilderImg6 from "../../assets/Slider/6.jpg";
 import SilderImg7 from "../../assets/Slider/7.jpg";
 import SilderImg8 from "../../assets/Slider/8.jpg";
 import SilderImg9 from "../../assets/Slider/9.jpg";
+import { Box, Stack } from "@mui/material";
 const ArrSliderImg = [
   SilderImg1,
   SilderImg2,
@@ -22,20 +23,20 @@ const ArrSliderImg = [
 const ImageSlider = () => {
   // _____________________________________Custome image slider_____________________________________
   return (
-    <div className="Scrooler">
-      <div className="Inner__scrooler">
+    <Stack className="Scrooler">
+      <Box className="Inner__scrooler">
         {ArrSliderImg.map((img, index) => (
-          <div className="imagecontainer" key={index}>
+          <Box className="imagecontainer" key={index} sx={{width:{xl:'260px',md:'200px',xs:'180px'}}}>
             <img src={img} alt={`SilderImg${index + 1}`} className="Imageees" />
-          </div>
+          </Box>
         ))}
         {ArrSliderImg.map((img, index) => (
-          <div className="imagecontainer" key={index}>
+          <Box className="imagecontainer" key={index} sx={{width:{xl:'260px',md:'200px',xs:'180px'}}}>
             <img src={img} alt={`SilderImg${index + 1}`} className="Imageees" />
-          </div>
+          </Box>
         ))}
-      </div>
-    </div>
+      </Box>
+    </Stack>
   );
 };
 

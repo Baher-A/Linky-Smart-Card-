@@ -1,9 +1,11 @@
 import React, { useEffect } from "react";
 import DataDiagram from "./DataDiagram.jsx";
 import { Box, Container, Grid, Stack, Typography } from "@mui/material";
+import { ShowTextt } from "../ElementDesign/ObserverComp";
 
 const Section9 = () => {
   useEffect(() => {
+    ShowTextt("Section9Text", `rtl`)
     const element1 = document.getElementById("darrr");
     const Observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
@@ -21,7 +23,7 @@ const Section9 = () => {
     Observer.observe(element1);
   }, []);
   return (
-    <Stack sx={{ mt: { md: 5, xs: 15 } }}>
+    <Stack sx={{ my: { md: 15, xs: 15 } }}>
       <Container>
         <Grid container>
           <Grid item xs={12} md={6}>
@@ -37,14 +39,15 @@ const Section9 = () => {
                 height: "100%",
               }}
             >
-              <Typography variant="h7">personal cards analisis</Typography>
-              <Typography variant="h4" sx={{ fontWeight: "bold" }}>
+              <Typography variant="h7" className="HIdeText Section9Text">personal cards analisis</Typography>
+              <Typography variant="h4" sx={{ fontWeight: "bold" }} className="HIdeText Section9Text">
                 Stats And Reports All The Time
               </Typography>
               <Typography
                 id="darrr"
                 variant="caption"
                 sx={{ color: "grey", maxWidth: "480px" }}
+                className="HIdeText Section9Text"
               >
                 We provide a dashboard to track and know all possible statistics
                 about your fans and visitors, who used to connect to your

@@ -1,9 +1,16 @@
 import { Box, Container, Grid, Stack, Typography } from "@mui/material";
-import React from "react";
+import React, { useEffect } from "react";
 import customsocialmedia from "../../assets/Cards/PesonalPage/custom-social-media.png";
+import { Xrotate, ShowTextt } from "../ElementDesign/ObserverComp";
+
 const Section3 = () => {
+  useEffect(() => {
+    Xrotate(`customsocialmediaimg`, `FliprightShow`,'FliprightHidden');
+    ShowTextt('ltrText', `ltr`);
+  }, []);
+
   return (
-    <Stack sx={{ mt: { xs: 3, md: 5 } }}>
+    <Stack sx={{ my: { xs: 10, md: 20 } }}>
       <Container>
         <Grid container>
           <Grid item xs={12} md={6}>
@@ -19,11 +26,19 @@ const Section3 = () => {
                 height: "100%",
               }}
             >
-              <Typography variant="h7">THERE ARE MANY VARIATIONS</Typography>
-              <Typography variant="h4" sx={{ fontWeight: "bold" }}>
+              <Typography className="HIdeText ltrText" id="text1" variant="h7">
+                THERE ARE MANY VARIATIONS
+              </Typography>
+              <Typography
+                className="HIdeText ltrText"
+                id="text2"
+                variant="h4"
+                sx={{ fontWeight: "bold" }}
+              >
                 Customize All Social Links
               </Typography>
               <Typography
+                className="HIdeText ltrText"
                 variant="caption"
                 sx={{ color: "grey", maxWidth: "480px" }}
               >
@@ -34,7 +49,7 @@ const Section3 = () => {
             </Box>
           </Grid>
           <Grid item xs={12} md={6}>
-            <Box
+            <Stack
               sx={{
                 display: "flex",
                 justifyContent: "center",
@@ -44,11 +59,15 @@ const Section3 = () => {
               }}
             >
               <img
+                id="customsocialmediaimg"
                 src={customsocialmedia}
+                className="FliprightHidden"
                 alt="custom-social-media"
-                style={{ width: "100%" }}
+                style={{
+                  width: "100%",
+                }}
               />
-            </Box>
+            </Stack>
           </Grid>
         </Grid>
       </Container>

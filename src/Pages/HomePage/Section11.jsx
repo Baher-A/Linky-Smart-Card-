@@ -11,15 +11,22 @@ import img7 from "../../assets/Avatar/Habeed.jpg";
 import img8 from "../../assets/Avatar/shaf3e.jpg";
 import img9 from "../../assets/Avatar/7.jpg";
 import img10 from "../../assets/Avatar/Moaz.jpg";
+import SecondaryButton from "../ElementDesign/SecondaryButton";
+
 import {
   Avatar,
+  Backdrop,
   Box,
   Button,
   Card,
   Container,
   Typography,
+  useTheme,
+  Alert,
+  Snackbar,
 } from "@mui/material";
-import { theme } from "../../Home.jsx";
+import ReviewForm from "./ReviewForm";
+
 const CardContant = [
   {
     img: img1,
@@ -92,12 +99,15 @@ const CardContant = [
   },
 ];
 const Section11 = () => {
+  const [OpenReviewProp, setOpenReviewProp] = useState(false);
+  const [ReviewCompelete, setReviewCompelete] = useState(false);
+  const theme = useTheme();
   const COntainerRef = useRef();
   return (
     <Container
       component={"div"}
       ref={COntainerRef}
-      style={{ marginTop: "3rem" }}
+      sx={{ my: { xs: 10, md: 15 } }}
     >
       <Box
         sx={{
@@ -167,7 +177,13 @@ const Section11 = () => {
                   }}
                 />
                 <Box sx={{ textAlign: "center" }} component={"footer"}>
-                  <Typography variant="caption">{item.caption}</Typography>
+                  <Typography
+                    variant="caption"
+                    color={theme.palette.text.secondary}
+                    fontWeight={"bold"}
+                  >
+                    {item.caption}
+                  </Typography>
                   <br />
                   <Typography
                     variant="caption"
@@ -186,25 +202,62 @@ const Section11 = () => {
             </SwiperSlide>
           );
         })}
-        <Button
-          variant="outlined"
+        <SecondaryButton
+          content="LEAVE A REVIEW"
           sx={{
             fontWeight: "bold",
+
             color: `white`,
             mt: 3,
-            padding: "0.5rem 1rem ",
+            padding: "0.8rem 1rem !important ",
             bgcolor: theme.palette.secondary.main,
             alignSelf: "center",
-            borderColor: theme.palette.secondary.main,
+            // borderColor: theme.palette.secondary.main,
             "&:hover": {
-              bgcolor: theme.palette.secondary.light,
-              borderColor: theme.palette.secondary.main,
+              boxShadow:
+                theme.palette.mode == "light"
+                  ? `1px 1px  5px 5px rgba(0,0,0,.3) !important`
+                  : `0px 0px  5px 5px rgba(255,255,255,.3) !important`,
+              bgcolor: theme.palette.primary.dark,
             },
           }}
+          onClick={() => {
+            setOpenReviewProp(!OpenReviewProp);
+          }}
         >
-          LEAVE A REVIEW
-        </Button>
+          
+        </SecondaryButton>
+
       </Swiper>
+      <Backdrop sx={{ zIndex: 5 }} open={OpenReviewProp}>
+          <ReviewForm
+            OpenReviewProp={OpenReviewProp}
+            setOpenReviewProp={setOpenReviewProp}
+            setReviewCompelete={setReviewCompelete}
+          />
+
+        </Backdrop>
+      <Snackbar
+            name="snachbar"
+            open={ReviewCompelete}
+            autoHideDuration={5000}
+            onClose={() => {
+              setReviewCompelete(false);
+            }}
+     
+          >
+            <Alert
+              name="Alert"
+              onClose={() => {
+                setReviewCompelete(false);
+              }}
+              severity="success"
+              variant="filled"
+              sx={{ width: "100%", color:'white' }}
+            >
+              Done ... Thank You sir for u Review
+            </Alert>
+          </Snackbar>
     </Container>
   );
 };

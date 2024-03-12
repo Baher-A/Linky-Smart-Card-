@@ -6,9 +6,12 @@ import {
   Grid,
   Paper,
   Typography,
+  useTheme,
 } from "@mui/material";
 import React from "react";
-import { theme } from "../../Home.jsx";
+import PrimaryButton from "../ElementDesign/PrimaryButton";
+import SecondaryButton from "../ElementDesign/SecondaryButton";
+
 import VideoSection from "./VideoSection.jsx";
 const DataSection2 = [
   {
@@ -25,6 +28,7 @@ const DataSection2 = [
   },
 ];
 const Section10 = () => {
+  const theme = useTheme();
   return (
     <Container
       component={"section"}
@@ -33,7 +37,7 @@ const Section10 = () => {
         display: "flex",
         alignItems: "center",
         flexDirection: { xs: "column", md: "row" },
-        my: { xs: 3, md: 5 },
+        my: { xs: 10, md: 15 },
       }}
     >
       <Paper
@@ -87,7 +91,7 @@ const Section10 = () => {
         <Box component={"div"} sx={{ width: "100%", textAlign: "left", mt: 3 }}>
           <Box
             sx={{
-              bgcolor: theme.palette.grey[500],
+              bgcolor: theme.palette.text.secondary,
               display: "flex",
               flexDirection: "column",
               width: "100%",
@@ -99,12 +103,12 @@ const Section10 = () => {
               variant="caption"
               component={"h6"}
               sx={{
-                bgcolor: theme.palette.primary.light,
+                bgcolor: theme.palette.primary.main,
                 display: "flex",
                 justifyContent: "space-between",
                 borderRadius: "15px",
                 padding: "5px",
-                // color: "black",
+                color: "#FFF",
                 fontWeight: "bold",
                 textDecoration: "none",
                 objectFit: "fill",
@@ -117,6 +121,7 @@ const Section10 = () => {
                 variant="caption"
                 component={"span"}
                 fontWeight={"bold"}
+                color={"white"}
               >
                 94%
               </Typography>
@@ -155,40 +160,43 @@ const Section10 = () => {
               justifyContent: "center",
               alignItems: "center",
               mt: 3,
+              
             }}
           >
-            <Button
-              variant="contained"
+            <PrimaryButton
+              content="JOIN NOW"
               sx={{
                 fontWeight: "bold",
                 mr: 3,
                 bgcolor: theme.palette.primary.main,
-                borderRadius: "15px",
-                color: "black",
+
                 "&:hover": {
-                  boxShadow: `-1px -1px  10px 5px #29E6FF !important`,
-                  bgcolor: theme.palette.primary.main,
+                  boxShadow:
+                  theme.palette.mode == "light"
+                    ? `1px 1px  5px 5px rgba(0,0,0,.3) !important`
+                    : `0px 0px  5px 5px rgba(255,255,255,.3) !important`,
+                  bgcolor: theme.palette.primary.dark,
                 },
               }}
-            >
-              JOIN NOW
-            </Button>
-            <Button
-              variant="outlined"
+            ></PrimaryButton>
+            <SecondaryButton
+              content="GET TICKET"
               sx={{
-                fontWeight: "bold",
-                color: `${theme.palette.Gang}`,
-                borderRadius: "15px",
-                // bgcolor: theme.palette.secondary.main,
-                borderColor: theme.palette.secondary.main,
+                // color: `${theme.palette.text.primary}`,
+                padding: '8px 12px !important',
+                fontSize:'85%',
+         
                 "&:hover": {
-                  bgcolor: theme.palette.secondary.main,
-                  borderColor: theme.palette.secondary.main,
+                  boxShadow:
+                    theme.palette.mode == "light"
+                      ? `1px 1px  5px 5px rgba(0,0,0,.3) !important`
+                      : `0px 0px  5px 5px rgba(255,255,255,.3) !important`,
+                  bgcolor: theme.palette.primary.dark,
                 },
               }}
             >
-              GET TICKET
-            </Button>
+              
+            </SecondaryButton>
           </Box>
         </Box>
       </Box>

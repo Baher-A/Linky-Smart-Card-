@@ -1,11 +1,13 @@
-import { Button, Container, Grid, Typography } from "@mui/material";
+import { Button, Container, Grid, Typography, useTheme } from "@mui/material";
 import React from "react";
-import { theme } from "../../Home.jsx";
+
 import Sectionimg from "../../assets/Sectionimg6.png";
+import PrimaryButton from "../ElementDesign/PrimaryButton";
 
 const Section6 = () => {
+  const theme = useTheme();
   return (
-    <Container sx={{ mt: { xs: 5, md: 10 } }}>
+    <Container sx={{ my: { xs: 10, md: 15 } }}>
       <Grid container sx={{ alignItems: "center" }}>
         <Grid
           item
@@ -53,14 +55,31 @@ const Section6 = () => {
             </u>{" "}
             Profile
           </Typography>
-          <Typography variant="caption" component={"h6"} sx={{ mt: "10px" }}>
+          <Typography
+            variant="caption"
+            component={"h6"}
+            sx={{ mt: 5, color: theme.palette.text.secondary }}
+          >
             Create something unique and design your profile to fully express you
             through a set of professional tools that do not require any
             programming experience.
           </Typography>
-          <Button variant="contained" sx={{ mt: "10px", fontWeight: "bold" }}>
-            CONTACT US
-          </Button>
+          <PrimaryButton
+          content='CONTACT US'
+          sx={{
+            bgcolor: `${theme.palette.primary.dark}!important`,
+            paddingX: "2rem",
+            mt:5,
+            "&:hover": {
+              boxShadow:
+                theme.palette.mode == "light"
+                  ? `1px 1px  5px 5px rgba(0,0,0,.3) !important`
+                  : `0px 0px  5px 5px rgba(255,255,255,.3) !important`,
+              bgcolor: theme.palette.primary.main,
+            },
+          }}
+        >
+        </PrimaryButton>
         </Grid>
       </Grid>
     </Container>

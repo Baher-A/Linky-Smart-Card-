@@ -1,11 +1,14 @@
-import { Box, Button, Grid, Typography } from "@mui/material";
+import { Box, Button, Grid, Typography, useTheme } from "@mui/material";
 import React from "react";
-import { theme } from "../../Home.jsx";
 import SEC7IMG from "../../assets/section7.png";
 import MobileAppIMG from "../../assets/mobile-app-icons2.png";
+import { useNavigate } from "react-router-dom";
+import PrimaryButton from "../ElementDesign/PrimaryButton";
 const Section7 = () => {
+  const navigat= useNavigate()
+  const theme =  useTheme()
   return (
-    <Grid container component={"section"} mt={5}>
+    <Grid container component={"section"} sx={{my: { xs: 10, md: 15 }}}>
       <Grid item xs={12} md={6}>
         <Box sx={{ display: "flex", justifyContent: "center" }}>
           <img src={SEC7IMG} alt="SEC7IMG" />
@@ -49,9 +52,23 @@ const Section7 = () => {
             src={MobileAppIMG}
             sx={{ maxWidth: "274px" }}
           />
-          <Button variant="contained" sx={{ mt: "10px", fontWeight: "bold" }}>
-            READ MORE
-          </Button>
+          <PrimaryButton
+            content='    READ MORE'
+            onClick={() => { navigat('./personal') }}
+          sx={{
+            bgcolor: `${theme.palette.primary.dark}!important`,
+            paddingX: "2rem",
+            mt:3,
+            "&:hover": {
+              boxShadow:
+                theme.palette.mode == "light"
+                  ? `1px 1px  5px 5px rgba(0,0,0,.3) !important`
+                  : `0px 0px  5px 5px rgba(255,255,255,.3) !important`,
+              bgcolor: theme.palette.primary.main,
+            },
+          }}
+        >
+        </PrimaryButton>
         </Box>
       </Grid>
     </Grid>

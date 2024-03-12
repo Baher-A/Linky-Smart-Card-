@@ -6,24 +6,27 @@ import {
   Stack,
   Typography,
 } from "@mui/material";
-import React, { useRef } from "react";
-import Home1 from "../../assets/Home1.png";
-import img1 from "../../assets/Cards/PesonalPage/1.jpg";
+import React, { useEffect, useRef } from "react";
 import img2 from "../../assets/Cards/PesonalPage/2.png";
 import img3 from "../../assets/Cards/PesonalPage/3.png";
 import img4 from "../../assets/Cards/PesonalPage/4.png";
 import img5 from "../../assets/Cards/PesonalPage/5.png";
-import { Swiper, SwiperSlide } from "swiper/react";
+import {ShowTextt} from "../ElementDesign/ObserverComp"
+
+import CustomeSlider from "./CustomeSlider";
 const bg = "#c5c5c5";
 const IconsImage = [img5, img2, img3, img4];
 const Section1 = () => {
+  useEffect(() => {
+    ShowTextt('PS1T','ltr')
+  }, [])
+  
   const SwiperRef = useRef(null);
   return (
     <Stack
       sx={{
         mt: "1rem",
         backgroundImage: "linear-gradient(90deg,#c5c5c5,#d5d5d5,#e5e5e5)",
-        // bgcolor: `${bg}`,
         borderTopRightRadius: { md: "7rem", xs: "3rem" },
         borderBottomLeftRadius: { md: "7rem", xs: "3rem" },
       }}
@@ -42,12 +45,13 @@ const Section1 = () => {
           <Box sx={{ display: "flex", flexDirection: "column", gap: 1 }}>
             <Typography
               variant="h2"
+              className="PS1T HIdeText"
               sx={{ color: "black", fontWeight: "bold" }}
             >
               Premium <br />
               Smart Card
             </Typography>
-            <Typography variant="caption" sx={{ color: "grey" }}>
+            <Typography className="PS1T HIdeText" variant="caption" sx={{ color: "grey"}}>
               the best selling product in the egyption market <br />
               100mAh - avaliable in all colors
             </Typography>
@@ -56,6 +60,7 @@ const Section1 = () => {
           {/* Buttons Container */}
           <Box
             component={"div"}
+            className="PS1T HIdeText"
             sx={{
               display: "flex",
               // justifyContent: "center",
@@ -104,12 +109,14 @@ const Section1 = () => {
             }}
           >
             <Typography
+              className="PS1T HIdeText"
               variant="h5"
               sx={{ color: "black", fontWeight: "bold" }}
             >
               300 EGP
             </Typography>
             <Button
+              className="PS1T HIdeText"
               variant="contained"
               sx={{
                 bgcolor: "black",
@@ -123,29 +130,16 @@ const Section1 = () => {
           </Box>
         </Box>
         <Box
+            className = {`HIdeText  PS1T`}
           sx={{
             width: "50%",
             display: "flex",
             flexDirection: "column",
+           
           }}
         >
-          <Swiper slidesPerView={1} ref={SwiperRef} style={{ width: "100%" }}>
-            {IconsImage.map((icon, index) => {
-              return (
-                <SwiperSlide key={index}>
-                  <img
-                    src={icon}
-                    alt=""
-                    style={{
-                      width: "100%",
-                      height: "100%",
-                      // objectFit: "contain",
-                    }}
-                  />
-                </SwiperSlide>
-              );
-            })}
-          </Swiper>
+          <CustomeSlider SliderImages={IconsImage}  Slideperview ={1}  Swiperref={SwiperRef}/>
+
         </Box>
       </Container>
     </Stack>

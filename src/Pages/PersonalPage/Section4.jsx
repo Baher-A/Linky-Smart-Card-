@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Privacy from "../../assets/Cards/PesonalPage/Privacy.png";
 import {
   Box,
@@ -10,9 +10,15 @@ import {
   Stack,
   Typography,
 } from "@mui/material";
+import { Xrotate, ShowTextt } from "../ElementDesign/ObserverComp";
 const Section4 = () => {
+
+  useEffect(() => {
+    Xrotate(`PrivacyImg`, `FliprightShow`,'FliprightHidden');
+    ShowTextt('Section4Text', `ltr`);
+  }, []);
   return (
-    <Stack sx={{ mt: { xs: 3, md: 5 } }}>
+    <Stack sx={{ my: { xs: 15, md: 15 } }}>
       <Container>
         <Grid container>
           <Grid item xs={12} md={6}>
@@ -28,11 +34,12 @@ const Section4 = () => {
                 height: "100%",
               }}
             >
-              <Typography variant="h7">For Personal & Famous</Typography>
-              <Typography variant="h4" sx={{ fontWeight: "bold" }}>
+              <Typography   className="HIdeText Section4Text" variant="h7">For Personal & Famous</Typography>
+              <Typography   className="HIdeText Section4Text" variant="h4" sx={{ fontWeight: "bold" }}>
                 Privacy is our priority
               </Typography>
               <Typography
+                  className="HIdeText Section4Text"
                 variant="caption"
                 sx={{ color: "grey", maxWidth: "480px" }}
               >
@@ -42,6 +49,7 @@ const Section4 = () => {
               </Typography>
               <List sx={{ textAlign: "center", color: "grey" }}>
                 <ListItem
+                  className="HIdeText Section4Text"
                   sx={{
                     "&::before": {
                       content: "''",
@@ -56,7 +64,7 @@ const Section4 = () => {
                   }}
                 >
                   <ListItemText>
-                    <Typography variant="caption">
+                    <Typography variant="caption"   >
                       We provide a tool to encrypt your content, to prevent
                       intruders from accessing your data or your social media
                       addresses
@@ -64,6 +72,7 @@ const Section4 = () => {
                   </ListItemText>
                 </ListItem>
                 <ListItem
+                  className="HIdeText Section4Text"
                   sx={{
                     "&::before": {
                       content: "''",
@@ -99,6 +108,8 @@ const Section4 = () => {
             >
               <img
                 src={Privacy}
+                id='PrivacyImg'
+                className="FliprightHidden"
                 alt="custom-social-media"
                 style={{ width: "100%" }}
               />

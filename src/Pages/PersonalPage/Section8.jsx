@@ -1,7 +1,13 @@
 import { Box, Grid, Stack, Typography } from "@mui/material";
-import React from "react";
+import React, { useEffect } from "react";
 import img1 from "../../assets/Cards/PesonalPage/digitals-phone-app-img2.png";
+import { Xrotate, ShowTextt } from "../ElementDesign/ObserverComp";
+
 const Section8 = () => {
+  useEffect(() => {
+    Xrotate(`Digitalphone`, `FliprightShow`, `FliprightHidden`);
+    ShowTextt("Section8Text", `rtl`);
+  }, []);
   return (
     <Stack
       sx={{
@@ -33,6 +39,8 @@ const Section8 = () => {
           >
             <img
               src={img1}
+              id="Digitalphone"
+              className="FliprightHidden"
               alt="Digital-phone"
               style={{ width: "100%", maxWidth: "520px" }}
             />
@@ -49,16 +57,25 @@ const Section8 = () => {
               alignContent: "center",
               flexDirection: "column",
               textAlign: "center",
+
               gap: 2,
             }}
           >
-            <Typography variant="h7">
+            <Typography variant="h7" className="HIdeText Section8Text">
               Complete customization of your data
             </Typography>
-            <Typography variant="h4" sx={{ maxWidth: "520px" }}>
+            <Typography
+              variant="h4"
+              sx={{ maxWidth: "520px" }}
+              className="HIdeText Section8Text"
+            >
               Present yourself in a unique way that suits you
             </Typography>
-            <Typography variant="subtitle2" sx={{ maxWidth: "520px" }}>
+            <Typography
+              variant="subtitle2"
+              sx={{ maxWidth: "520px", mb: { md: 10, xs: 0 } }}
+              className="HIdeText Section8Text"
+            >
               Display all your data in a way that expresses you and the content
               you provide, through an integrated set of Linky tools.
             </Typography>
