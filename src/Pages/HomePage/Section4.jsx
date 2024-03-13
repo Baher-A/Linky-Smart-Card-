@@ -6,9 +6,10 @@ import SVGSHAPE from "./SVGSHAPE";
 import { useNavigate } from "react-router-dom";
 import PrimaryButton from "../ElementDesign/PrimaryButton";
 import SecondaryButton from "../ElementDesign/SecondaryButton";
+import { ScrollToTopPAge } from "../ElementDesign/ObserverComp";
 
 const Section4 = () => {
-  const navigat= useNavigate()
+  const navigat = useNavigate();
   const theme = useTheme();
   return (
     <Box
@@ -24,7 +25,7 @@ const Section4 = () => {
       }}
     >
       {/* Svg Shape */}
-      <SVGSHAPE  Option={true} />
+      <SVGSHAPE Option={true} />
 
       <Grid
         container
@@ -156,22 +157,24 @@ const Section4 = () => {
                 display: "flex",
                 justifyContent: "center",
                 width: "100%",
-
                 mt: 5,
               }}
             >
               <PrimaryButton
-                content={'GET YOUR CARD'}
-                onClick={() => { navigat('./products/Custom-Design') }}
+                content={"GET YOUR CARD"}
+                onClick={() => {
+                  navigat("./products/Custom-Design");
+                  ScrollToTopPAge();
+                }}
                 sx={{
                   mr: 3,
                   bgcolor: `#333`,
                   padding: "5px 20px ",
                   "&:hover": {
                     boxShadow:
-                    theme.palette.mode == "light"
-                      ? `1px 1px  5px 5px rgba(0,0,0,.3) !important`
-                      : `0px 0px  5px 5px rgba(255,255,255,.3) !important`,
+                      theme.palette.mode == "light"
+                        ? `1px 1px  5px 5px rgba(0,0,0,.3) !important`
+                        : `0px 0px  5px 5px rgba(255,255,255,.3) !important`,
                     bgcolor: theme.palette.primary.dark,
                   },
                 }}
@@ -179,22 +182,16 @@ const Section4 = () => {
                 GET YOUR CARD
               </PrimaryButton>
               <SecondaryButton
-                content={'Business Support'}
+                content={"Business Support"}
                 sx={{
-                  
-
-
                   "&:hover": {
                     boxShadow:
-                    theme.palette.mode == "light"
-                      ? `1px 1px  5px 5px rgba(0,0,0,.3) !important`
-                      : `0px 0px  5px 5px rgba(255,255,255,.3) !important`,
-   
+                      theme.palette.mode == "light"
+                        ? `1px 1px  5px 5px rgba(0,0,0,.3) !important`
+                        : `0px 0px  5px 5px rgba(255,255,255,.3) !important`,
                   },
                 }}
-              >
-                
-              </SecondaryButton>
+              ></SecondaryButton>
             </Box>
           </Box>
         </Grid>

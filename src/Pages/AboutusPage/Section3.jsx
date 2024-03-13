@@ -1,6 +1,5 @@
 import { Box, Container, Grid, Stack, Typography } from "@mui/material";
 import React from "react";
-import ii from "../../assets/AboutUs/Aboutus3.jpg";
 
 const SectionData = [
   {

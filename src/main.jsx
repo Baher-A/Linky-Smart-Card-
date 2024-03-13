@@ -20,7 +20,7 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App />}>
 
-      <Route path="/Linky-Smart-Card" element={<Home />} />
+      <Route path="/LINKY-PROJECT" element={<Home />} />
       <Route index element={<Home />} />
       <Route path="/personal" element={<PERSONAL />} />
       <Route path="/about-us" element={<Aboutus />} />

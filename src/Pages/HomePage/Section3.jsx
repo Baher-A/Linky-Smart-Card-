@@ -4,7 +4,7 @@ import { section3 as content } from "../../assets/Projectinfo";
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import PrimaryButton from "../ElementDesign/PrimaryButton";
-
+import { ScrollToTopPAge } from "../ElementDesign/ObserverComp";
 const fontsizee = {
   title: { xs: "40px", sm: "30px", md: "60px" },
   caption: { xs: "15px", sm: "15px", md: "18px" },
@@ -196,6 +196,7 @@ const Section3 = () => {
               content={"GET YOUR CARD"}
               onClick={() => {
                 navigat("./products/Bold-Card");
+                ScrollToTopPAge();
               }}
               sx={{
                 mt: 3,
