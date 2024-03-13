@@ -91,3 +91,7 @@ const Section3 = () => {
 };
 
 export default Section3;
+    // "swiper": "^11.0.7"
+    // "react-router-dom": "^6.21.3"
+    // "react-dom": "^18.2.0"
+// 
